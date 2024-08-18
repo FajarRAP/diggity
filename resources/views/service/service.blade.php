@@ -82,14 +82,16 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-system-testing.png')">
-            <x-slot:title>System Testing</x-slot:title>
-            <x-slot:description>
-                Dengan keahlian pengujian kami, kami memastikan bahwa perangkat lunak Anda siap untuk mengatasi
-                berbagai tantangan. Jika Anda siap untuk meningkatkan kekuatan kode Anda, mari kita bekerja sama
-                untuk memastikan kualitasnya!
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-system-testing') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-system-testing.png')">
+                <x-slot:title>System Testing</x-slot:title>
+                <x-slot:description>
+                    Dengan keahlian pengujian kami, kami memastikan bahwa perangkat lunak Anda siap untuk mengatasi
+                    berbagai tantangan. Jika Anda siap untuk meningkatkan kekuatan kode Anda, mari kita bekerja sama
+                    untuk memastikan kualitasnya!
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-big-data-services.png')">
             <x-slot:title>Big Data Services</x-slot:title>
             <x-slot:description>

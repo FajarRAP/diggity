@@ -38,12 +38,13 @@
     <x-slot:faqs>
         <div class="lg:space-y-3 xl:space-y-6">
             <h3 class="heading-three text-accent">Frequently Asked Questions</h3>
-            <h2 class="heading-two">Apa itu layanan UI/UX Design?</h2>
+            <h2 class="heading-two">Apa itu layanan DevOps Solution?</h2>
             <p class="paragraph">
-                Layanan UI/UX Design mengacu pada antarmuka pengguna dan pengalaman pengguna, fokus pada pembuatan
-                antarmuka yang visual menarik, ramah pengguna, dan intuitif. Penting untuk proyek perangkat lunak Anda
-                karena meningkatkan kepuasan pengguna, keterlibatan, dan kegunaan secara keseluruhan, yang berkontribusi
-                pada kesuksesan aplikasi Anda.
+                Layanan DevOps Solutions adalah serangkaian solusi dan praktik terintegrasi yang dirancang untuk
+                meningkatkan efisiensi, kecepatan, dan kualitas dalam siklus pengembangan dan penerapan perangkat lunak.
+                Ini mencakup otomatisasi proses, kolaborasi tim lintas fungsional, dan integrasi antara pengembangan
+                (development) dan operasi (operations) untuk mencapai pengiriman perangkat lunak yang lebih cepat dan
+                andal.
             </p>
         </div>
         <div class="flex flex-col lg:gap-3 xl:gap-6">
