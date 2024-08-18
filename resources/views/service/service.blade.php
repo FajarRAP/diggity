@@ -72,14 +72,16 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-devops-solution.png')">
-            <x-slot:title>DevOps Solution</x-slot:title>
-            <x-slot:description>
-                Kami hadir untuk meningkatkan efisiensi dan keandalan proyek Anda. Bersiaplah untuk menyederhanakan
-                pengiriman perangkat lunak Anda dengan kolaborasi bersama kami. Mari bergandengan tangan dalam
-                menciptakan saluran yang siap menghadapi masa depan. Mulailah perjalanan DevOps Anda sekarang!
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-devops') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-devops-solution.png')">
+                <x-slot:title>DevOps Solution</x-slot:title>
+                <x-slot:description>
+                    Kami hadir untuk meningkatkan efisiensi dan keandalan proyek Anda. Bersiaplah untuk menyederhanakan
+                    pengiriman perangkat lunak Anda dengan kolaborasi bersama kami. Mari bergandengan tangan dalam
+                    menciptakan saluran yang siap menghadapi masa depan. Mulailah perjalanan DevOps Anda sekarang!
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-system-testing.png')">
             <x-slot:title>System Testing</x-slot:title>
             <x-slot:description>
