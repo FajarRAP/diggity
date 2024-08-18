@@ -32,7 +32,7 @@
     {{-- Our Solutions --}}
     <x-wrapper bg="bg-secondary">
         <h2 class="mx-auto text-center xl:w-3/4 heading-two">
-            Layanan Website Development Kami Membantu Anda
+            Layanan {{ $name }} Kami Membantu Anda
             Membangun Berbagai Solusi
         </h2>
         <div class="grid grid-cols-3 lg:gap-x-10 xl:gap-x-20 lg:gap-y-12 xl:gap-y-24">

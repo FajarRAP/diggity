@@ -61,15 +61,17 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-uiux-design.png')">
-            <x-slot:title>UI/UX Design</x-slot:title>
-            <x-slot:description>
-                Layanan ini ditujukan bagi Anda yang menganggap komunikasi visual sebagai elemen krusial dalam
-                menyampaikan pesan, visi, dan misi perusahaan Anda. Efektivitas pengalaman pengguna dalam
-                menggunakan produk Anda akan memengaruhi tingkat konversi tindakan yang dilakukan oleh pengguna
-                tersebut.
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-ui-ux') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-uiux-design.png')">
+                <x-slot:title>UI/UX Design</x-slot:title>
+                <x-slot:description>
+                    Layanan ini ditujukan bagi Anda yang menganggap komunikasi visual sebagai elemen krusial dalam
+                    menyampaikan pesan, visi, dan misi perusahaan Anda. Efektivitas pengalaman pengguna dalam
+                    menggunakan produk Anda akan memengaruhi tingkat konversi tindakan yang dilakukan oleh pengguna
+                    tersebut.
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-devops-solution.png')">
             <x-slot:title>DevOps Solution</x-slot:title>
             <x-slot:description>
