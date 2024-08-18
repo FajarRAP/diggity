@@ -92,15 +92,17 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-big-data-services.png')">
-            <x-slot:title>Big Data Services</x-slot:title>
-            <x-slot:description>
-                Optimalkan pendapatan bisnis Anda dengan keputusan yang didukung oleh data. Layanan Big Data kami
-                memberi Anda kekuatan untuk mengekstrak wawasan yang dapat diambil tindakan, meningkatkan efisiensi
-                operasional, dan membuat keputusan berdasarkan informasi yang mengarah pada kesuksesan jangka
-                panjang dalam era data yang sangat penting saat ini.
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-big-data') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-big-data-services.png')">
+                <x-slot:title>Big Data Services</x-slot:title>
+                <x-slot:description>
+                    Optimalkan pendapatan bisnis Anda dengan keputusan yang didukung oleh data. Layanan Big Data kami
+                    memberi Anda kekuatan untuk mengekstrak wawasan yang dapat diambil tindakan, meningkatkan efisiensi
+                    operasional, dan membuat keputusan berdasarkan informasi yang mengarah pada kesuksesan jangka
+                    panjang dalam era data yang sangat penting saat ini.
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-digital-marketing.png')">
             <x-slot:title>Digital Marketing</x-slot:title>
             <x-slot:description>
