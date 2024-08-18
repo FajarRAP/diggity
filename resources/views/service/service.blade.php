@@ -40,15 +40,17 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-mvp-development.png')">
-            <x-slot:title>MVP Development</x-slot:title>
-            <x-slot:description>
-                MVP Development
-                Mendapatkan wawasan bisnis dari setiap ide dan konsep melalui pengembangan Minimum Viable Product
-                (MVP). Bangun produk MVP bersama kami untuk menemukan solusi untuk setiap peluang bisnis di pasar
-                digital saat ini.
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-product-dev') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-mvp-development.png')">
+                <x-slot:title>MVP Development</x-slot:title>
+                <x-slot:description>
+                    MVP Development
+                    Mendapatkan wawasan bisnis dari setiap ide dan konsep melalui pengembangan Minimum Viable Product
+                    (MVP). Bangun produk MVP bersama kami untuk menemukan solusi untuk setiap peluang bisnis di pasar
+                    digital saat ini.
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-custom-software-development.png')">
             <x-slot:title>Custom Software Development</x-slot:title>
             <x-slot:description>
