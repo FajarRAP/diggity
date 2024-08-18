@@ -103,14 +103,16 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-digital-marketing.png')">
-            <x-slot:title>Digital Marketing</x-slot:title>
-            <x-slot:description>
-                Mendukung beragam jenis bisnis Anda, mulai dari skala kecil seperti bisnis rumahan dan UMKM, hingga
-                bisnis rintisan (startup) dan perusahaan besar, dalam menerapkan strategi pemasaran digital yang
-                efektif.
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-digital-marketing') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-digital-marketing.png')">
+                <x-slot:title>Digital Marketing</x-slot:title>
+                <x-slot:description>
+                    Mendukung beragam jenis bisnis Anda, mulai dari skala kecil seperti bisnis rumahan dan UMKM, hingga
+                    bisnis rintisan (startup) dan perusahaan besar, dalam menerapkan strategi pemasaran digital yang
+                    efektif.
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
     </x-wrapper>
 
     {{-- Contact Us Service --}}

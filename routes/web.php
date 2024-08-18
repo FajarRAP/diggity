@@ -18,7 +18,6 @@ Volt::route('/dedicated-team', 'pages.collaborationtype.dedicated-team')->name('
 Volt::route('/on-demand', 'pages.collaborationtype.on-demand')->name('on-demand');
 Volt::route('/portfolio', 'pages.portfolio.portfolio')->name('portfolio');
 Volt::route('/portfolio/{id}', 'pages.portfolio.detail-portfolio')->name('detail-portfolio');
-// Volt::route('/service/{id}', 'pages.services.service-detail')->name('service-detail');
 
 Route::get('/service', fn() => view('service.service'))->name('service');
 Route::prefix('service')->group(function () {
@@ -32,6 +31,5 @@ Route::prefix('service')->group(function () {
     Route::get('/big-data', fn() => view('service.big-data-service'))->name('s-big-data');
     Route::get('/digital-marketing', fn() => view('service.digital-marketing'))->name('s-digital-marketing');
 });
-
 
 require __DIR__ . '/auth.php';

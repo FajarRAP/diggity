@@ -19,25 +19,42 @@
         </a>
     </x-wrapper>
 
-    {{-- Service Details --}}
+    {{-- Service Details | Our First Solution --}}
     <x-wrapper>
-        <div class="grid grid-cols-2 xl:gap-24 lg:gap-12">
-            <h1 class="my-auto heading-one">Layanan {{ $name }} yang Kami Sediakan</h1>
-            <div class="grid grid-cols-2 lg:gap-x-3.5 xl:gap-x-7 lg:gap-y-6 xl:gap-y-12">
-                {{ $servicesProvided }}
+        @if (!Route::is('s-digital-marketing'))
+            <div class="grid grid-cols-2 xl:gap-24 lg:gap-12">
+                <h1 class="my-auto heading-one">Layanan {{ $name }} yang Kami Sediakan</h1>
+                <div class="grid grid-cols-2 lg:gap-x-3.5 xl:gap-x-7 lg:gap-y-6 xl:gap-y-12">
+                    {{ $servicesProvided }}
+                </div>
             </div>
-        </div>
+        @else
+            <div class="xl:space-y-24 lg:space-y-12">
+                <h1 class="mx-auto text-center xl:w-3/4 heading-one">
+                    Layanan {{ $name }} Kami Membantu Anda Membangun Berbagai Solusi
+                </h1>
+                <div class="flex xl:gap-36 lg:gap-24">
+                    {{ $firstServiceSolutions }}
+                </div>
+            </div>
+        @endif
     </x-wrapper>
 
     {{-- Our Solutions --}}
     <x-wrapper bg="bg-secondary">
-        <h2 class="mx-auto text-center xl:w-3/4 heading-two">
-            Layanan {{ $name }} Kami Membantu Anda
-            Membangun Berbagai Solusi
-        </h2>
-        <div class="grid grid-cols-3 lg:gap-x-10 xl:gap-x-20 lg:gap-y-12 xl:gap-y-24">
-            {{ $solutions }}
-        </div>
+        @if (!Route::is('s-digital-marketing'))
+            <h2 class="mx-auto text-center xl:w-3/4 heading-two">
+                Layanan {{ $name }} Kami Membantu Anda
+                Membangun Berbagai Solusi
+            </h2>
+            <div class="grid grid-cols-3 lg:gap-x-10 xl:gap-x-20 lg:gap-y-12 xl:gap-y-24">
+                {{ $solutions }}
+            </div>
+        @else
+            <div class="flex xl:gap-36 lg:gap-24">
+                {{ $secondServiceSolutions }}
+            </div>
+        @endif
     </x-wrapper>
 
     {{-- FAQs --}}
