@@ -51,14 +51,16 @@
                 </x-slot:description>
             </x-item-our-service>
         </a>
-        <x-item-our-service :src="asset('asset/images/services/pages/icon-custom-software-development.png')">
-            <x-slot:title>Custom Software Development</x-slot:title>
-            <x-slot:description>
-                Optimalkan perkembangan bisnis dengan mengembangkan platform digital yang sesuai dan cocok dengan
-                kebutuhan perusahaan Anda. Tingkatkan efisiensi setiap langkah bisnis untuk mempermudah dan
-                mempercepat prosesnya.
-            </x-slot:description>
-        </x-item-our-service>
+        <a href="{{ route('s-custom-dev') }}" class="block" wire:navigate>
+            <x-item-our-service :src="asset('asset/images/services/pages/icon-custom-software-development.png')">
+                <x-slot:title>Custom Software Development</x-slot:title>
+                <x-slot:description>
+                    Optimalkan perkembangan bisnis dengan mengembangkan platform digital yang sesuai dan cocok dengan
+                    kebutuhan perusahaan Anda. Tingkatkan efisiensi setiap langkah bisnis untuk mempermudah dan
+                    mempercepat prosesnya.
+                </x-slot:description>
+            </x-item-our-service>
+        </a>
         <x-item-our-service :src="asset('asset/images/services/pages/icon-uiux-design.png')">
             <x-slot:title>UI/UX Design</x-slot:title>
             <x-slot:description>

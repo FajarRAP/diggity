@@ -22,7 +22,7 @@
     <x-slot:solutions>
         <x-service-solution :src="asset('asset/images/services/product-development/task-management.png')" title="Aplikasi Manajemen Tugas"
             description="Platform ini membantu Anda mengatur dan melacak tugas-tugas Anda dengan lebih efisien, memungkinkan kolaborasi tim, penjadwalan, dan pemantauan progres." />
-        <x-service-solution :src="asset('asset/images/services/product-development/medical.png')" title=" Pelacak Kesehatan dan Kebugaran"
+        <x-service-solution :src="asset('asset/images/services/product-development/medical.png')" title="Pelacak Kesehatan dan Kebugaran"
             description="Melalui aplikasi ini, Anda dapat memantau aktivitas fisik Anda, mengatur program latihan, dan melacak kemajuan Anda dalam mencapai tujuan kesehatan dan kebugaran Anda." />
         <x-service-solution :src="asset('asset/images/services/product-development/language.png')" title="Platform Pembelajaran Bahasa"
             description="Platform ini menyediakan berbagai sumber belajar untuk membantu Anda meningkatkan kemampuan berbahasa Anda, termasuk kelas online, latihan, dan ujian." />
@@ -86,7 +86,6 @@
                     pengembangan produk Anda.
                 </x-slot:answer>
             </x-item-faq>
-
         </div>
     </x-slot:faqs>
 </x-service-detail-layout>
