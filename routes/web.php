@@ -32,4 +32,6 @@ Route::prefix('service')->group(function () {
     Route::get('/digital-marketing', fn() => view('service.digital-marketing'))->name('s-digital-marketing');
 });
 
+Route::get('/product', fn() => view('product.product'))->name('product');
+
 require __DIR__ . '/auth.php';

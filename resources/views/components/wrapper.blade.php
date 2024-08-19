@@ -1,8 +1,7 @@
-@props(['bg' => 'bg-transparent', 'isFaq' => false, 'bottomBreadcumb' => false])
+@props(['bg' => 'transparent', 'spaces' => 'lg:space-y-6 xl:space-y-12', 'bottomBreadcumb' => false])
 
 @php
-    $paddings = $bg === 'bg-transparent' ? 'lg:py-24 xl:py-36' : 'lg:py-12 xl:py-24';
-    $spaces = !$isFaq ? 'lg:space-y-6 xl:space-y-12' : '';
+    $paddings = $bg === 'transparent' ? 'lg:py-24 xl:py-36' : 'lg:py-12 xl:py-24';
 @endphp
 
 @if (!$bottomBreadcumb)

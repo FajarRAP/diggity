@@ -5,9 +5,6 @@
     <h3 class="pb-3 border-b heading-three">{{ $title }}</h3>
     <p class="paragraph">{{ $description }}</p>
     @foreach ($benefits as $benefit)
-        <div class="flex items-center gap-2">
-            <img src="{{ asset('asset/icons/check-circle.png') }}" class="lg:size-4 xl:size-6">
-            <p class="paragraph">{{ $benefit }}</p>
-        </div>
+        <x-check-circle :benefit="$benefit" />
     @endforeach
 </a>
