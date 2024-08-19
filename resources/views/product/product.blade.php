@@ -18,14 +18,14 @@
         </h2>
         <x-item-product class="gap-4" title="Software Manajemen Tenaga Kerja, HR, dan Payroll"
             description="Kami menyediakan satu solusi lengkap untuk kebutuhan Anda dalam manajemen tenaga kerja, serta operasional dan strategis HR guna meningkatkan efisiensi bisnis Anda."
-            :src="asset('asset/images/products/pages/hr.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/hr.jpg')" :href="route('p-hr-software')" :benefits="[
                 'Platform HR berbasis cloud yang fleksibel, tanpa biaya implementasi dan pemeliharaan.',
                 'Database HR yang aman, terintegrasi dengan berbagai modul manajemen.',
                 'Skalabilitas tinggi, mudah dikonfigurasi, dan dapat disesuaikan dengan budaya serta kebijakan perusahaan.',
                 'Otomatisasi proses HR untuk memperlancar operasional harian perusahaan.',
                 'Integrasi strategis yang beragam untuk analisis, perencanaan, dan pengambilan keputusan HR yang lebih efektif.',
             ]" />
-        <x-item-product reversed class="gap-4" title="Software Omnichannel dan CRM"
+        {{-- <x-item-product reversed class="gap-4" title="Software Omnichannel dan CRM"
             description="Kami menyediakan satu solusi lengkap untuk kebutuhan manajemen prospek dan layanan pelanggan, memperluas dan menginnovasi bidang penjualan, pemasaran, dan layanan pelanggan Anda."
             :src="asset('asset/images/products/pages/crm.jpg')" :benefits="[
                 'Sistem CRM & omnichannel berbasis cloud yang fleksibel, tanpa biaya implementasi dan pemeliharaan.',
@@ -75,7 +75,7 @@
                 'Notifikasi dan fitur persetujuan untuk memudahkan tim keuangan.',
                 'Pencairan dana sesuai dengan jadwal yang telah ditentukan.',
                 'Rekapan dan integrasi langsung dengan laporan pengeluaran otomatis.',
-            ]" />
+            ]" /> --}}
     </x-wrapper>
 
     {{-- Prices --}}

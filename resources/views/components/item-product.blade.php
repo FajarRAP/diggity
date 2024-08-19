@@ -1,4 +1,4 @@
-@props(['title', 'description', 'benefits', 'reversed' => false])
+@props(['title', 'description', 'benefits', 'href', 'reversed' => false])
 
 <div class="grid grid-cols-2 lg:gap-20 xl:gap-32">
     @if ($reversed)
@@ -8,7 +8,9 @@
             @foreach ($benefits as $benefit)
                 <x-check-circle :benefit="$benefit" />
             @endforeach
-            <x-outline-button class="lg:mt-3 xl:mt-6 w-fit">Pelajari Selengkapnya</x-outline-button>
+            <a href="{{ $href }}" wire:navigate>
+                <x-outline-button class="lg:mt-3 xl:mt-6 w-fit">Pelajari Selengkapnya</x-outline-button>
+            </a>
         </div>
         <img {{ $attributes->merge(['class' => 'my-auto rounded-2xl']) }} alt="body image">
     @else
@@ -19,7 +21,10 @@
             @foreach ($benefits as $benefit)
                 <x-check-circle :benefit="$benefit" />
             @endforeach
-            <x-outline-button class="self-end lg:mt-3 xl:mt-6 w-fit">Pelajari Selengkapnya</x-outline-button>
+            <a href="{{ $href }}" wire:navigate>
+                <x-outline-button class="self-end lg:mt-3 xl:mt-6 w-fit">Pelajari
+                    Selengkapnya</x-outline-button>
+            </a>
         </div>
     @endif
 </div>

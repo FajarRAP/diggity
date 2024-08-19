@@ -9,6 +9,10 @@
         @apply lg:text-sm xl:text-base;
     }
 
+    .paragraph-small {
+        @apply lg:text-xs xl:text-sm;
+    }
+
     .heading-one {
         @apply font-bold lg:text-2xl xl:text-4xl;
     }
@@ -20,6 +24,7 @@
     .heading-three {
         @apply font-semibold lg:text-lg xl:text-2xl;
     }
+
     .heading-four {
         @apply font-semibold lg:text-base xl:text-xl;
     }

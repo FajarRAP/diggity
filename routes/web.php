@@ -33,5 +33,8 @@ Route::prefix('service')->group(function () {
 });
 
 Route::get('/product', fn() => view('product.product'))->name('product');
+Route::prefix('product')->group(function () {
+    Route::get('/hr-software', fn() => view('product.hr-software'))->name('p-hr-software');
+});
 
 require __DIR__ . '/auth.php';
