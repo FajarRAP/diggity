@@ -68,14 +68,14 @@
                 'Katalog vendor yang lengkap dan terpilih.',
                 'Menjaga kepuasan dan retensi karyawan.',
             ]" />
-        {{-- <x-item-product class="gap-4" title="Software Pengelolaan Pengeluaran dan Operasional"
+        <x-item-product class="gap-4" title="Software Pengelolaan Pengeluaran dan Operasional"
             description="Memfasilitasi pengelolaan pengeluaran perusahaan secara efisien dengan fokus pada strategi bisnis yang lebih besar untuk mengendalikan biaya dan keuangan perusahaan."
-            :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/accountant.jpg')" :href="route('p-expense')" :benefits="[
                 'Kemudahan dalam pengajuan dan persetujuan reimbursement melalui aplikasi',
                 'Notifikasi dan fitur persetujuan untuk memudahkan tim keuangan.',
                 'Pencairan dana sesuai dengan jadwal yang telah ditentukan.',
                 'Rekapan dan integrasi langsung dengan laporan pengeluaran otomatis.',
-            ]" /> --}}
+            ]" />
     </x-wrapper>
 
     {{-- Prices --}}
