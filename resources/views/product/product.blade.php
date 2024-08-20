@@ -43,16 +43,16 @@
                 'Otomatisasi proses HR untuk memperlancar operasional harian perusahaan.',
                 'Analisis performa dengan laporan real-time.',
             ]" />
-        {{-- <x-item-product reversed class="gap-4" title="Software Tanda Tangan dan Materai Online"
+        <x-item-product reversed class="gap-4" title="Software Tanda Tangan dan Materai Online"
             description="Mengurangi waktu dan biaya administrasi dokumen digital dengan fitur eSignature dan eMeterai yang aman serta sah secara hukum."
-            :src="asset('asset/images/products/pages/sign.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/sign.jpg')" :href="route('p-sign')" :benefits="[
                 'Tanda tangan elektronik yang sah di indonesia dan global.',
                 'Meterai elektronik resmi peruri yang dapat digunakan kapan saja.',
                 'Pengiriman dan penandatanganan dokumen secara massal.',
                 'Pemantauan status dokumen secara real-time.',
                 'Penjadwalan kontrak otomatis dengan pengingat masa kontrak.',
             ]" />
-        <x-item-product class="gap-4" title="Software Manajemen Pajak Karyawan dan Bisnis"
+        {{-- <x-item-product class="gap-4" title="Software Manajemen Pajak Karyawan dan Bisnis"
             description="Kami menawarkan solusi perangkat lunak yang aman dan andal untuk memenuhi kebutuhan perpajakan bisnis Anda, yang juga merupakan mitra resmi dari Direktorat Jenderal Pajak (DJP)."
             :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
                 'Pembayaran dan pelaporan pajak dapat dilakukan secara online dengan aman.',
