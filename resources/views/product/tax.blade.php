@@ -54,9 +54,8 @@
                     Bagaimana cara mendaftar akun software Manajemen Pajak Karyawan dan Bisnis Diggity?
                 </x-slot:question>
                 <x-slot:answer>
-                    Untuk mendaftar akun, silakan hubungi tim Diggity. Mereka akan merespons pada jam kerja (Senin –
-                    Jumat, 9.00 – 17.00 WIB).
-
+                    Untuk mendaftar akun, silakan hubungi tim Diggity. Mereka akan merespons pada jam kerja (Senin -
+                    Jumat, 9.00 - 17.00 WIB).
                 </x-slot:answer>
             </x-item-faq>
             <x-item-faq>
@@ -65,7 +64,6 @@
                 </x-slot:question>
                 <x-slot:answer>
                     Ya, Anda bisa mendaftar untuk demo produk dengan menghubungi kami.
-
                 </x-slot:answer>
             </x-item-faq>
             <x-item-faq>

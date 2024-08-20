@@ -60,15 +60,15 @@
                 'Riwayat pelaporan pajak tersimpan dengan rapi untuk referensi Anda.',
                 'Menjamin kepatuhan dengan peraturan perpajakan yang berlaku.',
             ]" />
-        {{-- <x-item-product reversed class="gap-4" title="Software Manajemen Benefit dan Dukungan Finansial Karyawan"
+        <x-item-product reversed class="gap-4" title="Software Manajemen Benefit dan Dukungan Finansial Karyawan"
             description="Meningkatkan kesejahteraan dan keterlibatan karyawan dengan program benefit yang dapat disesuaikan dengan kebutuhan individu."
-            :src="asset('asset/images/products/pages/sign.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/sign.jpg')" :href="route('p-benefit-management')" :benefits="[
                 'Administrasi benefit yang sesuai dengan anggaran perusahaan.',
                 'Opsi akses gaji lebih cepat tersedia.',
                 'Katalog vendor yang lengkap dan terpilih.',
                 'Menjaga kepuasan dan retensi karyawan.',
             ]" />
-        <x-item-product class="gap-4" title="Software Pengelolaan Pengeluaran dan Operasional"
+        {{-- <x-item-product class="gap-4" title="Software Pengelolaan Pengeluaran dan Operasional"
             description="Memfasilitasi pengelolaan pengeluaran perusahaan secara efisien dengan fokus pada strategi bisnis yang lebih besar untuk mengendalikan biaya dan keuangan perusahaan."
             :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
                 'Kemudahan dalam pengajuan dan persetujuan reimbursement melalui aplikasi',
