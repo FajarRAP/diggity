@@ -23,18 +23,22 @@
             Mengapa Perlu Menggunakan Software Omnichannel dan CRM dari Diggity
         </h2>
         <div class="grid grid-cols-3 xl:gap-x-7 lg:gap-x-3.5 xl:gap-y-12 lg:gap-y-8">
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Visibilitas Keuangan Real-time dengan Laporan Otomatis"
-                description="Lihat kondisi keuangan bisnis secara langsung dengan lebih dari 40 laporan keuangan otomatis yang dapat diakses secara online." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Konsistensi Data dengan Integrasi Otomatis"
-                description="Pastikan konsistensi data dengan sinkronisasi otomatis antara data penjualan, stok, dan keuangan, sehingga data selalu terupdate." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Kelola Stok dan Gudang Secara Terpusat Online"
-                description="Atur stok, aktivitas gudang, serta penjualan dan pembelian dalam satu aplikasi yang terpusat dan dapat diakses secara online." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Analisis Keuangan Otomatis untuk Pertumbuhan Bisnis"
-                description="Dapatkan analisis keuangan otomatis untuk memahami perkembangan bisnis Anda dengan ringkasan dan rekomendasi berbasis automasi dan AI." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Integrasi untuk Operasional Bisnis yang Lancar"
-                description="Pastikan konsistensi data dengan sinkronisasi otomatis antara data penjualan, stok, dan keuangan, sehingga data selalu terupdate." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Kelola Stok dan Gudang Secara Terpusat Online"
-                description="Atur stok, aktivitas gudang, serta penjualan dan pembelian dalam satu aplikasi yang terpusat dan dapat diakses secara online." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Maksimalkan Penjualan dengan Chatbot 24/7"
+                description="Chatbot yang responsif siap membantu otomasi layanan pelanggan dan prospekting, memberikan dukungan setiap saat." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Perlindungan Data Pelanggan yang Terjamin"
+                description="Keamanan sistem yang disertifikasi memberikan jaminan perlindungan data pelanggan, melebihi solusi Omnichannel dan CRM lainnya." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')"
+                title="Monitoring Tim Lebih Efisien dengan Sistem Terintegrasi"
+                description="Singkronisasi antara tim penjualan, pemasaran, dan layanan pelanggan memudahkan dalam memantau kinerja tim dengan sistem yang terintegrasi." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')"
+                title="Pengambilan Keputusan Lebih Cepat dengan Dukungan Teknologi Tinggi"
+                description="Dukungan dari teknologi NLP, AI, dan analitik memastikan kecepatan dan akurasi dalam pengambilan keputusan, meningkatkan efisiensi operasional." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')"
+                title="Sentralisasi Proses Bisnis untuk Menghindari Fragmentasi"
+                description="Mencegah fragmentasi, kerusakan hardware, dan proses bisnis yang kacau dengan sentralisasi proses bisnis yang terstruktur." />
+            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')"
+                title="Tingkatkan Produktivitas Tim dengan Otomatisasi yang Fleksibel"
+                description="Meningkatkan produktivitas tim internal dengan menghilangkan proses repetitif melalui otomatisasi yang fleksibel sesuai kebutuhan." />
         </div>
     </x-slot:benefits>
 
@@ -55,7 +59,7 @@
                 </x-slot:question>
                 <x-slot:answer>
                     Manfaat utama penggunaan software CRM Omnichannel Diggity adalah:
-                    <ol class="text-gray-600 list-decimal xl:ps-5 lg:ps-3">
+                    <ol class="list-decimal ps-5">
                         <li>Pusatnya Data: Menyimpan semua interaksi bisnis dan pelanggan dari berbagai channel dalam
                             satu
                             database, memudahkan pemahaman minat pelanggan dan menyusun strategi promosi. </li>

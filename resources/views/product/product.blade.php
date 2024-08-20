@@ -34,16 +34,16 @@
                 'Dukungan teknologi AI & Bot otomatis untuk meningkatkan efisiensi operasional.',
                 'Berbagai modul integrasi strategis untuk analisis, perencanaan, dan pengambilan keputusan.',
             ]" />
-        {{-- <x-item-product class="gap-4" title="Software Akuntansi Online"
+        <x-item-product class="gap-4" title="Software Akuntansi Online"
             description="Mengatasi risiko kesalahan pencatatan dan memastikan data yang dapat diakses dengan mudah di berbagai lokasi."
-            :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/accountant.jpg')" :href="route('p-accountant')" :benefits="[
                 'Pembukuan yang terbantu oleh automasi.',
                 'Rekonsiliasi bank yang lebih mudah melalui integrasi.',
                 'Pengelolaan inventaris dan stok barang yang komprehensif.',
                 'Otomatisasi proses HR untuk memperlancar operasional harian perusahaan.',
                 'Analisis performa dengan laporan real-time.',
             ]" />
-        <x-item-product reversed class="gap-4" title="Software Tanda Tangan dan Materai Online"
+        {{-- <x-item-product reversed class="gap-4" title="Software Tanda Tangan dan Materai Online"
             description="Mengurangi waktu dan biaya administrasi dokumen digital dengan fitur eSignature dan eMeterai yang aman serta sah secara hukum."
             :src="asset('asset/images/products/pages/sign.jpg')" :benefits="[
                 'Tanda tangan elektronik yang sah di indonesia dan global.',
