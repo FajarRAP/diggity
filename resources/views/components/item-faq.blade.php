@@ -4,5 +4,5 @@
         <h5 class="font-medium">{{ $question }}</h5>
         <x-svgs.arrow x-bind:class="open ? '-rotate-90' : 'rotate-90'" class="transition lg:size-3" />
     </div>
-    <p x-show="open" class="text-gray-600">{{ $answer }}</p>
+    <div x-show="open" class="text-gray-600 paragraph">{{ $answer }}</div>
 </div>

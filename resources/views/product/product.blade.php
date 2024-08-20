@@ -18,23 +18,23 @@
         </h2>
         <x-item-product class="gap-4" title="Software Manajemen Tenaga Kerja, HR, dan Payroll"
             description="Kami menyediakan satu solusi lengkap untuk kebutuhan Anda dalam manajemen tenaga kerja, serta operasional dan strategis HR guna meningkatkan efisiensi bisnis Anda."
-            :src="asset('asset/images/products/pages/hr.jpg')" :href="route('p-hr-software')" :benefits="[
+            :src="asset('asset/images/products/pages/hr.jpg')" :href="route('p-hr')" :benefits="[
                 'Platform HR berbasis cloud yang fleksibel, tanpa biaya implementasi dan pemeliharaan.',
                 'Database HR yang aman, terintegrasi dengan berbagai modul manajemen.',
                 'Skalabilitas tinggi, mudah dikonfigurasi, dan dapat disesuaikan dengan budaya serta kebijakan perusahaan.',
                 'Otomatisasi proses HR untuk memperlancar operasional harian perusahaan.',
                 'Integrasi strategis yang beragam untuk analisis, perencanaan, dan pengambilan keputusan HR yang lebih efektif.',
             ]" />
-        {{-- <x-item-product reversed class="gap-4" title="Software Omnichannel dan CRM"
+        <x-item-product reversed class="gap-4" title="Software Omnichannel dan CRM"
             description="Kami menyediakan satu solusi lengkap untuk kebutuhan manajemen prospek dan layanan pelanggan, memperluas dan menginnovasi bidang penjualan, pemasaran, dan layanan pelanggan Anda."
-            :src="asset('asset/images/products/pages/crm.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/crm.jpg')" :href="route('p-crm')" :benefits="[
                 'Sistem CRM & omnichannel berbasis cloud yang fleksibel, tanpa biaya implementasi dan pemeliharaan.',
                 'Pipeline data penjualan dan pelanggan yang aman, terintegrasi dengan berbagai modul manajemen.',
                 'Pipeline data penjualan dan pelanggan yang aman, terintegrasi dengan berbagai modul manajemen.',
                 'Dukungan teknologi AI & Bot otomatis untuk meningkatkan efisiensi operasional.',
                 'Berbagai modul integrasi strategis untuk analisis, perencanaan, dan pengambilan keputusan.',
             ]" />
-        <x-item-product class="gap-4" title="Software Akuntansi Online"
+        {{-- <x-item-product class="gap-4" title="Software Akuntansi Online"
             description="Mengatasi risiko kesalahan pencatatan dan memastikan data yang dapat diakses dengan mudah di berbagai lokasi."
             :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
                 'Pembukuan yang terbantu oleh automasi.',

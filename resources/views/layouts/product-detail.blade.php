@@ -2,7 +2,7 @@
     <x-wrapper bg="bg-ghost-white">
         {{-- Top Breadcumb --}}
         <x-breadcumb>
-            <x-breadcumb-link>
+            <x-breadcumb-link :href="route('product')" wire:navigate>
                 Produk
             </x-breadcumb-link>
             <x-breadcumb-link>
@@ -37,7 +37,7 @@
     {{-- Bottom Breadcumb --}}
     <x-wrapper :bottomBreadcumb="true">
         <x-breadcumb>
-            <x-breadcumb-link>
+            <x-breadcumb-link :href="route('product')">
                 Produk
             </x-breadcumb-link>
             <x-breadcumb-link>

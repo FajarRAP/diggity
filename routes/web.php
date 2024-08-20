@@ -20,7 +20,7 @@ Volt::route('/portfolio', 'pages.portfolio.portfolio')->name('portfolio');
 Volt::route('/portfolio/{id}', 'pages.portfolio.detail-portfolio')->name('detail-portfolio');
 
 Route::get('/service', fn() => view('service.service'))->name('service');
-Route::prefix('service')->group(function () {
+Route::prefix('/service')->group(function () {
     Route::get('/web-dev', fn() => view('service.website-development'))->name('s-web-dev');
     Route::get('/mobile-dev', fn() => view('service.mobile-app-development'))->name('s-mobile-dev');
     Route::get('/product-dev', fn() => view('service.product-development'))->name('s-product-dev');
@@ -33,8 +33,14 @@ Route::prefix('service')->group(function () {
 });
 
 Route::get('/product', fn() => view('product.product'))->name('product');
-Route::prefix('product')->group(function () {
-    Route::get('/hr-software', fn() => view('product.hr-software'))->name('p-hr-software');
+Route::prefix('/product')->group(function () {
+    Route::get('/hr', fn() => view('product.hr'))->name('p-hr');
+    Route::get('/crm', fn() => view('product.crm'))->name('p-crm');
+    Route::get('/accountant', fn() => view('product.accountant'))->name('p-accountant');
+    Route::get('/sign', fn() => view('product.sign'))->name('p-sign');
+    Route::get('/tax', fn() => view('product.tax'))->name('p-tax');
+    Route::get('/benefit-management', fn() => view('product.benefit-management'))->name('p-benefit-management');
+    Route::get('/expense', fn() => view('product.expense'))->name('p-expense');
 });
 
 require __DIR__ . '/auth.php';
