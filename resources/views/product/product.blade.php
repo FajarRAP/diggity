@@ -52,15 +52,15 @@
                 'Pemantauan status dokumen secara real-time.',
                 'Penjadwalan kontrak otomatis dengan pengingat masa kontrak.',
             ]" />
-        {{-- <x-item-product class="gap-4" title="Software Manajemen Pajak Karyawan dan Bisnis"
+        <x-item-product class="gap-4" title="Software Manajemen Pajak Karyawan dan Bisnis"
             description="Kami menawarkan solusi perangkat lunak yang aman dan andal untuk memenuhi kebutuhan perpajakan bisnis Anda, yang juga merupakan mitra resmi dari Direktorat Jenderal Pajak (DJP)."
-            :src="asset('asset/images/products/pages/accountant.jpg')" :benefits="[
+            :src="asset('asset/images/products/pages/accountant.jpg')" :href="route('p-tax')" :benefits="[
                 'Pembayaran dan pelaporan pajak dapat dilakukan secara online dengan aman.',
                 'Anda akan menerima bukti pelaporan pajak yang sah dan resmi.',
                 'Riwayat pelaporan pajak tersimpan dengan rapi untuk referensi Anda.',
                 'Menjamin kepatuhan dengan peraturan perpajakan yang berlaku.',
             ]" />
-        <x-item-product reversed class="gap-4" title="Software Manajemen Benefit dan Dukungan Finansial Karyawan"
+        {{-- <x-item-product reversed class="gap-4" title="Software Manajemen Benefit dan Dukungan Finansial Karyawan"
             description="Meningkatkan kesejahteraan dan keterlibatan karyawan dengan program benefit yang dapat disesuaikan dengan kebutuhan individu."
             :src="asset('asset/images/products/pages/sign.jpg')" :benefits="[
                 'Administrasi benefit yang sesuai dengan anggaran perusahaan.',
