@@ -1,3 +1,5 @@
+@props(['prev', 'next'])
+
 <div class="flex justify-between">
     <div class="flex flex-col lg:gap-4 xl:gap-6">
         <h4 class="heading-four text-accent">Previous</h4>

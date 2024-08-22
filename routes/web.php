@@ -13,11 +13,12 @@ Route::view('profile', 'profile')
 
 Volt::route('/', 'pages.home.home')->name('home');
 Volt::route('/contactus', 'pages.contactus.contact-us')->name('contact-us');
-Volt::route('/project-based', 'pages.collaborationtype.project-based')->name('project-based');
-Volt::route('/dedicated-team', 'pages.collaborationtype.dedicated-team')->name('dedicated-team');
-Volt::route('/on-demand', 'pages.collaborationtype.on-demand')->name('on-demand');
 Volt::route('/portfolio', 'pages.portfolio.portfolio')->name('portfolio');
 Volt::route('/portfolio/{id}', 'pages.portfolio.detail-portfolio')->name('detail-portfolio');
+
+Route::view('/project-based', 'collaboration-type.project-based')->name('project-based');
+Route::view('/dedicated-team', 'collaboration-type.dedicated-team')->name('dedicated-team');
+Route::view('/on-demand', 'collaboration-type.on-demand')->name('on-demand');
 
 Route::get('/service', fn() => view('service.service'))->name('service');
 Route::prefix('/service')->group(function () {
