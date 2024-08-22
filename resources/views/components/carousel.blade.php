@@ -1,3 +1,5 @@
+@props(['carouselNum'])
+
 <div id="default-carousel-{{ $carouselNum }}" class="w-full h-fit">
     {{ $slot }}
     <!-- Carousel wrapper -->

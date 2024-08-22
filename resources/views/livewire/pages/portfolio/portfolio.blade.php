@@ -6,7 +6,7 @@ use Livewire\Attributes\Layout;
 new #[Layout('layouts.app')] class extends Component {}; ?>
 
 <div>
-    {{-- Header --}}
+    {{-- Top Breadcumb & Header --}}
     <x-wrapper bg="bg-secondary">
         <x-breadcumb>
             <x-breadcumb-link>
@@ -35,26 +35,18 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
 
     {{-- Contact Us --}}
     <x-wrapper bg="bg-secondary">
-        <x-hero-header :src="asset('asset/images/header-contact-us.jpeg')">
-            <x-slot:type>
-                Konsultasi Gratis Mengenai Bagaimana Solusi Kami dapat Membantu Perkembangan Bisnis Anda!
-            </x-slot:type>
-            <x-slot:description>
-                Jika Anda memiliki proyek yang ingin direalisasikan atau ingin berkolaborasi dengan kami dalam
-                mengembangkan
-                bisnis impian Anda, jangan ragu untuk menghubungi kami sekarang!
-            </x-slot:description>
-        </x-hero-header>
+        <x-hero-header-contact-us />
     </x-wrapper>
 
     {{-- Bottom Breadcumb --}}
-    <div class="container mx-auto lg:py-3 xl:py-5">
+    <x-wrapper :bottomBreadcumb="true">
         <x-breadcumb>
             <x-breadcumb-link>
                 Portofolio
             </x-breadcumb-link>
         </x-breadcumb>
-    </div>
+    </x-wrapper>
 
+    {{-- Footer --}}
     <x-footer />
 </div>

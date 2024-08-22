@@ -69,7 +69,8 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
                     'Harga dan jadwal pengerjaan yang transparan.',
                     'Menawarkan garansi kualitas selama satu bulan.',
                     'Ideal untuk pengembangan platform digital baru.',
-                ]" />
+                ]"
+                wire:navigate />
             <x-item-collaboration-type :href="route('on-demand')" title="On Demand"
                 description="Tim yang siap untuk menangani segala permasalahan dan kebutuhan platform digital Anda."
                 :benefits="[
@@ -77,7 +78,7 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
                     'Pengerjaan didasarkan pada permintaan yang diajukan.',
                     'Menawarkan biaya yang lebih terjangkau.',
                     'Ideal untuk pengembangan fitur dan pemeliharaan platform.',
-                ]" />
+                ]" wire:navigate />
         </div>
     </x-wrapper>
 
@@ -86,7 +87,7 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
         <x-carousel carouselNum="2">
             <div class="lg:space-y-6 xl:space-y-12 xl:mb-24 lg:mb-12">
                 <h2 class="font-semibold heading-two">Portofolio</h2>
-                <p class="mx-72 paragraph">
+                <p class="mx-auto lg:w-3/4 xl:w-1/2 paragraph">
                     Dalam beberapa tahun terakhir, pengalaman kami telah membantu klien memulai langkahnya
                     dalam dunia digital. Lihatlah beberapa karya terbaik yang telah kami hasilkan.
                 </p>
