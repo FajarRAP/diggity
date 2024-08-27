@@ -26,7 +26,7 @@
             <img src="{{ asset('asset/icons/whatsapp.png') }}" alt="whatsapp logo" class="size-14">
         </div>
 
-        <livewire:layout.navbar />
+        <livewire:layout.navigation />
 
         <!-- Page Heading -->
         @if (isset($header))

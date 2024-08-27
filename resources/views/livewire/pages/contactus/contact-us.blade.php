@@ -76,7 +76,7 @@ new #[Layout('layouts.app')] class extends Component {
         ]);
 
         session()->flash('message', 'Berhasil Mengirim Pesan');
-        
+
         $this->redirectRoute('contact-us');
     }
 };
