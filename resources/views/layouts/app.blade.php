@@ -8,11 +8,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-    {{-- <link rel="preconnect" href="https://fonts.bunny.net"> --}}
-    {{-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
-
-    <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -26,16 +21,17 @@
             <img src="{{ asset('asset/icons/whatsapp.png') }}" alt="whatsapp logo" class="size-14">
         </div>
 
+        
         <livewire:layout.navigation />
 
         <!-- Page Heading -->
-        @if (isset($header))
+        {{-- @if (isset($header))
             <header class="bg-white shadow dark:bg-gray-800">
                 <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>
             </header>
-        @endif
+        @endif --}}
 
         <!-- Page Content -->
         <main>
