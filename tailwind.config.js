@@ -18,7 +18,8 @@ export default {
             },
             boxShadow: {
                 'card': '0 2px 16px 0 rgba(25, 40, 57, 0.09)',
-                'card-secondary': '0 8px 24px 0 rgba(25, 40, 57, 0.12)'
+                'card-secondary': '0 8px 24px 0 rgba(25, 40, 57, 0.12)',
+                'navigation': '0 -2px 12px 0 rgba(0, 0, 0, .025)'
             },
             colors: {
                 'ghost-white': '#F5F8FF',

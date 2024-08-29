@@ -111,8 +111,8 @@ new class extends Component {
 </nav> --}}
 
 @auth
-    <nav class="bg-white">
-        <div x-data="{ search: true }"
+    <nav class="bg-white shadow-navigation">
+        <div x-data="{ search: false }"
             class="container flex items-center justify-between gap-12 mx-auto min-h-20 lg:py-3 xl:py-4">
             <a href="{{ route('home') }}" class="flex items-center space-x-3">
                 <img src="{{ asset('asset/logo.png') }}" class="size:8 lg:size-10 xl:size-14" alt="Diggity Logo" />
@@ -120,8 +120,9 @@ new class extends Component {
             </a>
             <div x-show="search" x-transition:enter="transition transform ease-out duration-150"
                 x-transition:enter-start="scale-x-0" x-transition:enter-end="scale-x-100"
-                x-transition:leave="transition transform ease-in duration-150" x-transition:leave-start="scale-x-100"
-                x-transition:leave-end="scale-x-0" class="flex items-center w-full gap-12">
+                x-transition:leave="transition transform origin-right ease-in duration-150"
+                x-transition:leave-start="scale-x-100" x-transition:leave-end="scale-x-0"
+                class="flex items-center w-full gap-12">
                 <div class="relative w-full rounded-md shadow-card">
                     <label for="search">
                         <img src="{{ asset('asset/icons/search.png') }}" alt="Search"
@@ -132,8 +133,8 @@ new class extends Component {
                 <img x-on:click="search=false" src="{{ asset('asset/icons/close.png') }}" alt="Close"
                     class="size-5 hover:cursor-pointer">
             </div>
-            <div x-show="!search" x-on:click="search=true" class="flex gap-6 ms-auto hover:cursor-pointer">
-                <div class="rounded-full lg:p-3 xl:p-4 shadow-card">
+            <div x-show="!search" class="flex gap-6 ms-auto hover:cursor-pointer">
+                <div x-on:click="search=true" class="rounded-full lg:p-3 xl:p-4 shadow-card">
                     <img src="{{ asset('asset/icons/search.png') }}" alt="Search Icon" class="lg:size-4 xl:size-5">
                 </div>
                 <div x-data="{ notifications: false }" x-on:click="notifications=true"
@@ -150,7 +151,7 @@ new class extends Component {
                     </div>
                 </div>
             </div>
-            <div x-show="!search" x-data="{ profile: false }" x-on:click="profile=true"
+            <div x-data="{ profile: false }" x-show="!search" x-on:click="profile=true"
                 class="relative flex items-center gap-6 rounded-full shadow-card hover:cursor-pointer">
                 <div class="rounded-full lg:size-12 xl:size-14 bg-primary"></div>
                 <div class="space-y-1">
