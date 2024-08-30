@@ -20,3 +20,8 @@ require __DIR__ . '/collaboration-type.php';
 require __DIR__ . '/service.php';
 require __DIR__ . '/product.php';
 require __DIR__ . '/auth.php';
+
+Route::view('/price', 'prices.price')->name('price');
+Route::prefix('/price')->group(function () {
+    Volt::route('/hr', 'pages.prices.hr')->name('price-hr');
+});
