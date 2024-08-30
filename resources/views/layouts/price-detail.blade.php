@@ -5,8 +5,8 @@
             <x-breadcumb-link>{{ $product }}</x-breadcumb-link>
         </x-breadcumb>
 
-        <x-heading-two class="w-1/2 mx-auto text-center">{{ $title }}</x-heading-two>
-        <x-paragraph class="w-1/2 mx-auto text-center">{{ $description }}</x-paragraph>
+        <x-heading-two class="w-2/3 mx-auto text-center">{{ $title }}</x-heading-two>
+        <x-paragraph class="w-2/3 mx-auto text-center">{{ $description }}</x-paragraph>
     </x-wrapper>
 
     <x-wrapper>

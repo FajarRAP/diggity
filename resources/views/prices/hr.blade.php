@@ -1,11 +1,4 @@
-<?php
-
-use Livewire\Volt\Component;
-use Livewire\Attributes\Layout;
-
-new #[Layout('layouts.price-detail')] class extends Component {}; ?>
-
-<div>
+<x-price-detail-layout>
     <x-slot:product>
         Software Manajemen Tenaga Kerja, HR, dan Payroll
     </x-slot:product>
@@ -123,4 +116,4 @@ new #[Layout('layouts.price-detail')] class extends Component {}; ?>
             </x-slot:answer>
         </x-item-faq>
     </x-slot:faqs>
-</div>
+</x-price-detail-layout>
