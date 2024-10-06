@@ -1,4 +1,4 @@
-<x-hero-header :src="asset('asset/images/header-contact-us.jpeg')">
+<x-hero-header :src="asset('assets/images/header-contact-us.jpeg')">
     <x-slot:type>
         Konsultasi Gratis Mengenai Bagaimana Solusi Kami dapat Membantu Perkembangan Bisnis
         Anda!

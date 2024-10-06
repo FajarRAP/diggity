@@ -10,10 +10,10 @@
             </x-breadcumb-link>
         </x-breadcumb>
 
-        <h1 class="text-center heading-one">{{ $name }}</h1>
-        <p class="mx-auto text-center paragraph xl:w-3/4">
-            {{ $description }}
-        </p>
+        <x-heading-one class="text-center">{{ $name }}</x-heading-one>
+        {{-- <p class="mx-auto text-center paragraph xl:w-3/4"> --}}
+        <x-paragraph class="w-3/4 mx-auto text-center">{{ $description }}</x-paragraph>
+        {{-- </p> --}}
         <a href="{{ route('contact-us') }}" class="block mx-auto w-fit" wire:navigate>
             <x-button>Hubungi Kami</x-button>
         </a>
@@ -22,9 +22,9 @@
     {{-- Service Details | Our First Solution --}}
     <x-wrapper>
         @if (!Route::is('s-digital-marketing'))
-            <div class="grid grid-cols-2 xl:gap-24 lg:gap-12">
-                <h1 class="my-auto heading-one">Layanan {{ $name }} yang Kami Sediakan</h1>
-                <div class="grid grid-cols-2 lg:gap-x-3.5 xl:gap-x-7 lg:gap-y-6 xl:gap-y-12">
+            <div class="grid grid-cols-2 xl:gap-24 lg:gap-16">
+                <x-heading-one class="my-auto">Layanan {{ $name }} yang Kami Sediakan</x-heading-one>
+                <div class="grid grid-cols-2 lg:gap-x-4 xl:gap-x-7 lg:gap-y-8 xl:gap-y-12">
                     {{ $servicesProvided }}
                 </div>
             </div>
@@ -43,11 +43,10 @@
     {{-- Our Solutions --}}
     <x-wrapper bg="bg-secondary">
         @if (!Route::is('s-digital-marketing'))
-            <h2 class="mx-auto text-center xl:w-3/4 heading-two">
-                Layanan {{ $name }} Kami Membantu Anda
-                Membangun Berbagai Solusi
-            </h2>
-            <div class="grid grid-cols-3 lg:gap-x-10 xl:gap-x-20 lg:gap-y-12 xl:gap-y-24">
+            <x-heading-two class="mx-auto text-center lg:w-3/5 xl:w-3/4">
+                Layanan {{ $name }} Kami Membantu Anda Membangun Berbagai Solusi
+            </x-heading-two>
+            <div class="grid grid-cols-3 lg:gap-x-14 xl:gap-x-20 lg:gap-y-16 xl:gap-y-24">
                 {{ $solutions }}
             </div>
         @else
@@ -59,8 +58,15 @@
 
     {{-- FAQs --}}
     <x-wrapper>
-        <div class="grid grid-cols-2 xl:gap-24 lg:gap-12">
-            {{ $faqs }}
+        <div class="grid grid-cols-2 xl:gap-24 lg:gap-16">
+            <div class="lg:space-y-4 xl:space-y-6">
+                <x-heading-three class="text-accent">Frequently Asked Questions</x-heading-three>
+                <x-heading-two>Apa itu layanan {{ $name }}?</x-heading-two>
+                <x-paragraph>{{ $definition }}</x-paragraph>
+            </div>
+            <div class="flex flex-col lg:gap-4 xl:gap-6">
+                {{ $faqs }}
+            </div>
         </div>
     </x-wrapper>
 
@@ -72,7 +78,7 @@
     {{-- Bottom Breadcumb --}}
     <x-wrapper :bottomBreadcumb="true">
         <x-breadcumb>
-            <x-breadcumb-link>
+            <x-breadcumb-link :href="route('service')" wire:navigate>
                 Layanan
             </x-breadcumb-link>
             <x-breadcumb-link>

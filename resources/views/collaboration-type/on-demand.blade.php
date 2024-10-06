@@ -11,14 +11,46 @@
 
     <x-slot:benefits>
         <div class="grid grid-cols-2 lg:gap-x-5 xl:gap-x-8 lg:gap-y-8 xl:gap-y-12">
-            <x-item-benefit num="1" title="Pelayanan Utama untuk Klien yang Sudah Ada"
-                description="Kami mengutamakan pelayanan bagi klien yang telah menjadi bagian dari  kami, untuk memastikan setiap kebutuhan dan tantangan yang muncul pada platform digital mereka diperhatikan dengan seksama. Mencakup perbaikan bug serta pengembangan fitur yang sesuai dengan kebutuhan." />
-            <x-item-benefit num="2" title="Sumber Daya yang Disesuaikan"
-                description="Dengan beragam sumber daya yang tersedia, Diggity dapat menyesuaikan tim yang tepat untuk menangani setiap masalah yang dihadapi pada platform digital Anda. Kami memastikan bahwa penanganan masalah tersebut dilakukan oleh tenaga ahli yang kompeten." />
-            <x-item-benefit num="3" title="Biaya yang Terjangkau"
-                description="Kami menawarkan opsi biaya yang bersahabat dengan menghitung penggunaan sumber daya sesuai dengan perkiraan waktu pengerjaan. Pembayaran dilakukan secara bulanan, memberikan keterbukaan dan kejelasan dalam pengeluaran." />
-            <x-item-benefit num="4" title="Pengerjaan yang Fleksibel"
-                description="Kami memberikan kebebasan kepada Anda untuk memprioritaskan proyek berdasarkan kebutuhan bisnis Anda. Ini memastikan fleksibilitas dan efisiensi dalam penyelesaian proyek Anda sesuai dengan waktu dan prioritas yang ditetapkan." />
+            <x-item-benefit num="1">
+                <x-slot:title>
+                    Pelayanan Utama untuk Klien yang Sudah Ada
+                </x-slot:title>
+                <x-slot:description>
+                    Kami mengutamakan pelayanan bagi klien yang telah menjadi bagian dari kami, untuk memastikan setiap
+                    kebutuhan dan tantangan yang muncul pada platform digital mereka diperhatikan dengan seksama.
+                    Mencakup perbaikan bug serta pengembangan fitur yang sesuai dengan kebutuhan.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="2">
+                <x-slot:title>
+                    Sumber Daya yang Disesuaikan
+                </x-slot:title>
+                <x-slot:description>
+                    Dengan beragam sumber daya yang tersedia, Diggity dapat menyesuaikan tim yang tepat untuk menangani
+                    setiap masalah yang dihadapi pada platform digital Anda. Kami memastikan bahwa penanganan masalah
+                    tersebut dilakukan oleh tenaga ahli yang kompeten.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="3">
+                <x-slot:title>
+                    Biaya yang Terjangkau
+                </x-slot:title>
+                <x-slot:description>
+                    Kami menawarkan opsi biaya yang bersahabat dengan menghitung penggunaan sumber daya sesuai dengan
+                    perkiraan waktu pengerjaan. Pembayaran dilakukan secara bulanan, memberikan keterbukaan dan
+                    kejelasan dalam pengeluaran.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="4">
+                <x-slot:title>
+                    Pengerjaan yang Fleksibel
+                </x-slot:title>
+                <x-slot:description>
+                    Kami memberikan kebebasan kepada Anda untuk memprioritaskan proyek berdasarkan kebutuhan bisnis
+                    Anda. Ini memastikan fleksibilitas dan efisiensi dalam penyelesaian proyek Anda sesuai dengan waktu
+                    dan prioritas yang ditetapkan.
+                </x-slot:description>
+            </x-item-benefit>
         </div>
     </x-slot:benefits>
 

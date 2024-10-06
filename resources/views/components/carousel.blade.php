@@ -6,7 +6,7 @@
     <div class="relative h-56 overflow-hidden rounded-lg lg:mb-12 xl:mb-24 md:h-96 text-start">
         <div id="c-item-1-{{ $carouselNum }}" class="hidden duration-700 ease-in-out ">
             <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 h-96 top-1/2 left-1/2">
-                <x-hero-header :src="asset('asset/images/carousels/carousel1.jpeg')">
+                <x-hero-header :src="asset('assets/images/carousels/carousel1.jpeg')">
                     <x-slot:type>Siapkah Anda untuk Mendigitalisasi Bisnis?</x-slot:type>
                     <x-slot:description>
                         Bergabunglah dengan Diggity untuk mengembangkan platform digital khusus
@@ -19,7 +19,7 @@
         </div>
         <div id="c-item-2-{{ $carouselNum }}" class="hidden duration-700 ease-in-out">
             <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 h-96 top-1/2 left-1/2">
-                <x-hero-header :src="asset('asset/images/carousels/carousel1.jpeg')">
+                <x-hero-header :src="asset('assets/images/carousels/carousel1.jpeg')">
                     <x-slot:type>Siapkah Anda untuk Mendigitalisasi Bisnis?</x-slot:type>
                     <x-slot:description>
                         Bergabunglah dengan Diggity untuk mengembangkan platform digital khusus
@@ -32,7 +32,7 @@
         </div>
         <div id="c-item-3-{{ $carouselNum }}" class="hidden duration-700 ease-in-out">
             <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 h-96 top-1/2 left-1/2">
-                <x-hero-header :src="asset('asset/images/carousels/carousel1.jpeg')">
+                <x-hero-header :src="asset('assets/images/carousels/carousel1.jpeg')">
                     <x-slot:type>Siapkah Anda untuk Mendigitalisasi Bisnis?</x-slot:type>
                     <x-slot:description>
                         Bergabunglah dengan Diggity untuk mengembangkan platform digital khusus
@@ -45,7 +45,7 @@
         </div>
         <div id="c-item-4-{{ $carouselNum }}" class="hidden duration-700 ease-in-out">
             <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 h-96 top-1/2 left-1/2">
-                <x-hero-header :src="asset('asset/images/carousels/carousel1.jpeg')">
+                <x-hero-header :src="asset('assets/images/carousels/carousel1.jpeg')">
                     <x-slot:type>Siapkah Anda untuk Mendigitalisasi Bisnis?</x-slot:type>
                     <x-slot:description>
                         Bergabunglah dengan Diggity untuk mengembangkan platform digital khusus

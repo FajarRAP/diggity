@@ -12,12 +12,34 @@
 
     <x-slot:benefits>
         <div class="grid grid-cols-3 gap-7">
-            <x-item-benefit num="1" title="Garansi 30 Hari"
-                description="Anda mendapatkan jaminan 30 hari untuk layanan perbaikan, penanganan bug, dan dukungan IT lainnya setelah platform digital Anda diluncurkan bersama kami." />
-            <x-item-benefit num="2" title="Harga Konsisten"
-                description="Harga layanan kami tetap stabil sepanjang proses pengembangan platform digital Anda, kecuali jika terjadi perubahan signifikan dalam alur kerja atau fitur yang telah disetujui sebelumnya." />
-            <x-item-benefit num="3" title="Tim Professional"
-                description="Tim berpengalaman dari Diggity, yang terdiri dari manajer proyek, pengembang, desainer UI/UX, ahli devops, dan quality assurance, bahkan digital marketer, akan mendampingi Anda dalam mengembangkan platform digital Anda." />
+            <x-item-benefit num="1">
+                <x-slot:title>
+                    Garansi 30 Hari
+                </x-slot:title>
+                <x-slot:description>
+                    Anda mendapatkan jaminan 30 hari untuk layanan perbaikan, penanganan bug, dan dukungan IT lainnya
+                    setelah platform digital Anda diluncurkan bersama kami.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="2">
+                <x-slot:title>
+                    Harga Konsisten
+                </x-slot:title>
+                <x-slot:description>
+                    Harga layanan kami tetap stabil sepanjang proses pengembangan platform digital Anda, kecuali jika
+                    terjadi perubahan signifikan dalam alur kerja atau fitur yang telah disetujui sebelumnya.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="3">
+                <x-slot:title>
+                    Tim Professional
+                </x-slot:title>
+                <x-slot:description>
+                    Tim berpengalaman dari Diggity, yang terdiri dari manajer proyek, pengembang, desainer UI/UX, ahli
+                    devops, dan quality assurance, bahkan digital marketer, akan mendampingi Anda dalam mengembangkan
+                    platform digital Anda.
+                </x-slot:description>
+            </x-item-benefit>
         </div>
     </x-slot:benefits>
 

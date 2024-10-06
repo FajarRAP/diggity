@@ -6,7 +6,7 @@
                 Layanan
             </x-breadcumb-link>
         </x-breadcumb>
-        <x-hero-header :src="asset('asset/images/carousels/carousel1.jpeg')">
+        <x-hero-header :src="asset('assets/images/carousels/carousel1.jpeg')">
             <x-slot:type>Layanan</x-slot:type>
             <x-slot:description>
                 Diggity menyediakan beragam layanan terbaik yang dirancang khusus untuk memenuhi kebutuhan teknologi
@@ -21,7 +21,7 @@
     <x-wrapper>
         <h2 class="heading-two lg:mb-12 xl:mb-24">Layanan yang Kami Sediakan</h2>
         <a href="{{ route('s-web-dev') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-website-development.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-website-development.jpg')">
                 <x-slot:title>Website Development</x-slot:title>
                 <x-slot:description>
                     Dengan bantuan tim developer yang berpengalaman, kami selalu memperhitungkan
@@ -31,7 +31,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-mobile-dev') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-mobile-app-development.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-mobile-app-development.jpg')">
                 <x-slot:title>Mobile App Development</x-slot:title>
                 <x-slot:description>
                     Optimalkan mobilitas dan reputasi merek bisnis Anda melalui pengembangan aplikasi mobile (Android &
@@ -41,7 +41,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-product-dev') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-mvp-development.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-mvp-development.jpg')">
                 <x-slot:title>MVP Development</x-slot:title>
                 <x-slot:description>
                     MVP Development
@@ -52,7 +52,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-custom-dev') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-custom-software-development.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-custom-software-development.jpg')">
                 <x-slot:title>Custom Software Development</x-slot:title>
                 <x-slot:description>
                     Optimalkan perkembangan bisnis dengan mengembangkan platform digital yang sesuai dan cocok dengan
@@ -62,7 +62,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-ui-ux') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-uiux-design.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-uiux-design.jpg')">
                 <x-slot:title>UI/UX Design</x-slot:title>
                 <x-slot:description>
                     Layanan ini ditujukan bagi Anda yang menganggap komunikasi visual sebagai elemen krusial dalam
@@ -73,7 +73,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-devops') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-devops-solution.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-devops-solution.jpg')">
                 <x-slot:title>DevOps Solution</x-slot:title>
                 <x-slot:description>
                     Kami hadir untuk meningkatkan efisiensi dan keandalan proyek Anda. Bersiaplah untuk menyederhanakan
@@ -83,7 +83,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-system-testing') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-system-testing.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-system-testing.jpg')">
                 <x-slot:title>System Testing</x-slot:title>
                 <x-slot:description>
                     Dengan keahlian pengujian kami, kami memastikan bahwa perangkat lunak Anda siap untuk mengatasi
@@ -93,7 +93,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-big-data') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-big-data-services.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-big-data-services.jpg')">
                 <x-slot:title>Big Data Services</x-slot:title>
                 <x-slot:description>
                     Optimalkan pendapatan bisnis Anda dengan keputusan yang didukung oleh data. Layanan Big Data kami
@@ -104,7 +104,7 @@
             </x-item-our-service>
         </a>
         <a href="{{ route('s-digital-marketing') }}" class="block" wire:navigate>
-            <x-item-our-service :src="asset('asset/images/services/pages/icon-digital-marketing.png')">
+            <x-item-our-service :src="asset('assets/images/services/pages/icon-digital-marketing.jpg')">
                 <x-slot:title>Digital Marketing</x-slot:title>
                 <x-slot:description>
                     Mendukung beragam jenis bisnis Anda, mulai dari skala kecil seperti bisnis rumahan dan UMKM, hingga
@@ -117,8 +117,8 @@
 
     {{-- Contact Us Service --}}
     <x-wrapper bg="bg-secondary" class="text-center">
-        <h2 class="heading-two">Tidak Menemukan Solusi yang Sesuai Kebutuhan Anda?</h2>
-        <p class="paragraph">Tim kami siap memberikan bantuan dengan senang hati</p>
+        <x-heading-two>Tidak Menemukan Solusi yang Sesuai Kebutuhan Anda?</x-heading-two>
+        <x-paragraph>Tim kami siap memberikan bantuan dengan senang hati</x-paragraph>
         <x-button class="mx-auto">Hubungi Kami</x-button>
     </x-wrapper>
 
@@ -126,43 +126,58 @@
     <x-wrapper>
         <h2 class="heading-two lg:mb-12 xl:mb-24">Model Kerja Sama</h2>
         <div class="grid grid-cols-3 gap-7">
-            <x-item-collaboration-type :href="route('project-based')" title="Project Based"
-                description="Tenaga kerja yang dikhususkan untuk menangani proyek Anda." :benefits="[
-                    'Tim eksklusif yang hanya bekerja untuk Anda.',
-                    'Mengurangi biaya manajemen sumber daya manusia (SDM).',
-                    'Menghilangkan kebutuhan untuk mengurus proses perekrutan.',
-                    'Cocok untuk pengembangan platform digital yang dinamis.',
-                ]"
-                wire:navigate />
+            <x-item-collaboration-type :href="route('project-based')" :benefits="[
+                'Tim eksklusif yang hanya bekerja untuk Anda.',
+                'Mengurangi biaya manajemen sumber daya manusia (SDM).',
+                'Menghilangkan kebutuhan untuk mengurus proses perekrutan.',
+                'Cocok untuk pengembangan platform digital yang dinamis.',
+            ]">
+                <x-slot:title>
+                    Project Based
+                </x-slot:title>
+                <x-slot:description>
+                    Tenaga kerja yang dikhususkan untuk menangani proyek Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
 
-            <x-item-collaboration-type :href="route('dedicated-team')" title="Dedicated Team"
-                description="Tim ahli untuk mengembangkan platform digital bisnis perusahaan Anda."
-                :benefits="[
-                    'Proyek disesuaikan dengan tujuan bisnis Anda.',
-                    'Harga dan jadwal pengerjaan yang transparan.',
-                    'Menawarkan garansi kualitas selama satu bulan.',
-                    'Ideal untuk pengembangan platform digital baru.',
-                ]" />
-            <x-item-collaboration-type :href="route('on-demand')" title="On Demand"
-                description="Tim yang siap untuk menangani segala permasalahan dan kebutuhan platform digital Anda."
-                :benefits="[
-                    'Lebih fleksibel dalam menanggapi kebutuhan Anda.',
-                    'Pengerjaan didasarkan pada permintaan yang diajukan.',
-                    'Menawarkan biaya yang lebih terjangkau.',
-                    'Ideal untuk pengembangan fitur dan pemeliharaan platform.',
-                ]" />
+            <x-item-collaboration-type :href="route('dedicated-team')" :benefits="[
+                'Proyek disesuaikan dengan tujuan bisnis Anda.',
+                'Harga dan jadwal pengerjaan yang transparan.',
+                'Menawarkan garansi kualitas selama satu bulan.',
+                'Ideal untuk pengembangan platform digital baru.',
+            ]">
+                <x-slot:title>
+                    Dedicated Team
+                </x-slot:title>
+                <x-slot:description>
+                    Tim ahli untuk mengembangkan platform digital bisnis perusahaan Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
+            <x-item-collaboration-type :href="route('on-demand')" :benefits="[
+                'Lebih fleksibel dalam menanggapi kebutuhan Anda.',
+                'Pengerjaan didasarkan pada permintaan yang diajukan.',
+                'Menawarkan biaya yang lebih terjangkau.',
+                'Ideal untuk pengembangan fitur dan pemeliharaan platform.',
+            ]">
+                <x-slot:title>
+                    On Demand
+                </x-slot:title>
+                <x-slot:description>
+                    Tim yang siap untuk menangani segala permasalahan dan kebutuhan platform digital Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
         </div>
     </x-wrapper>
 
     {{-- Portfolio --}}
     <x-wrapper bg="bg-secondary" class="text-center">
         <x-carousel carouselNum="2">
-            <div class="lg:space-y-6 xl:space-y-12 lg:mb-12 xl:mb-24">
-                <h2 class="heading-two">Portofolio</h2>
-                <p class="mx-72 paragraph">
+            <div class="lg:space-y-8 xl:space-y-12 lg:mb-12 xl:mb-24">
+                <x-heading-two>Portofolio</x-heading-two>
+                <x-paragraph class="mx-auto lg:w-1/2 xl:w-3/4">
                     Dalam beberapa tahun terakhir, pengalaman kami telah membantu klien memulai langkahnya
                     dalam dunia digital. Lihatlah beberapa karya terbaik yang telah kami hasilkan.
-                </p>
+                </x-paragraph>
             </div>
         </x-carousel>
     </x-wrapper>
@@ -171,49 +186,40 @@
     <x-wrapper>
         <div class="flex xl:gap-12 lg:gap-8">
             <div class="flex flex-col justify-center lg:w-3/4 xl:w-1/2 lg:gap-8 xl:gap-12">
-                <h1 class="heading-one">100+ <br> Teknologi yang Kami Gunakan</h1>
-                <p class="paragraph">
+                <x-heading-one>100+ <br> Teknologi yang Kami Gunakan</x-heading-one>
+                <x-paragraph>
                     Perkembangan teknologi berkembang dengan cepat. Kami memastikan teknologi
                     yang kami gunakan dapat memenuhi kebutuhan digitalisasi bisnis Anda secara optimal.
-                </p>
+                </x-paragraph>
             </div>
             <div class="grid grid-cols-5 lg:gap-8 xl:gap-12 grow">
-                <x-item-technology :src="asset('asset/icons/figma.png')" />
-                <x-item-technology :src="asset('asset/icons/vue.png')" />
-                <x-item-technology :src="asset('asset/icons/flutter.png')" />
-                <x-item-technology :src="asset('asset/icons/python.png')" />
-                <x-item-technology :src="asset('asset/icons/laravel.png')" />
-                <x-item-technology :src="asset('asset/icons/react.png')" />
-                <x-item-technology :src="asset('asset/icons/kotlin.png')" />
-                <x-item-technology :src="asset('asset/icons/blender.png')" />
-                <x-item-technology :src="asset('asset/icons/go.png')" />
-                <x-item-technology :src="asset('asset/icons/msoffice.png')" />
+                <x-item-technology :src="asset('assets/icons/figma.png')" />
+                <x-item-technology :src="asset('assets/icons/vue.png')" />
+                <x-item-technology :src="asset('assets/icons/flutter.png')" />
+                <x-item-technology :src="asset('assets/icons/python.png')" />
+                <x-item-technology :src="asset('assets/icons/laravel.png')" />
+                <x-item-technology :src="asset('assets/icons/react.png')" />
+                <x-item-technology :src="asset('assets/icons/kotlin.png')" />
+                <x-item-technology :src="asset('assets/icons/blender.png')" />
+                <x-item-technology :src="asset('assets/icons/go.png')" />
+                <x-item-technology :src="asset('assets/icons/msoffice.png')" />
             </div>
         </div>
     </x-wrapper>
 
     {{-- Contact Us --}}
     <x-wrapper bg="bg-secondary">
-        <x-hero-header :src="asset('asset/images/header-contact-us.jpeg')">
-            <x-slot:type>
-                Konsultasi Gratis Mengenai Bagaimana Solusi Kami dapat Membantu Perkembangan Bisnis Anda!
-            </x-slot:type>
-            <x-slot:description>
-                Jika Anda memiliki proyek yang ingin direalisasikan atau ingin berkolaborasi dengan kami dalam
-                mengembangkan
-                bisnis impian Anda, jangan ragu untuk menghubungi kami sekarang!
-            </x-slot:description>
-        </x-hero-header>
+        <x-hero-header-contact-us />
     </x-wrapper>
 
     {{-- Bottom Breadcumb --}}
-    <section class="container mx-auto lg:py-3 xl:py-5">
+    <x-wrapper :bottomBreadcumb="true">
         <x-breadcumb>
             <x-breadcumb-link>
                 Layanan
             </x-breadcumb-link>
         </x-breadcumb>
-    </section>
+    </x-wrapper>
 
     <x-footer />
 </x-app-layout>

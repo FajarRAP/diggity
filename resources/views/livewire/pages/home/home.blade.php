@@ -12,11 +12,11 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
 
     {{-- Service --}}
     <x-wrapper bg="bg-secondary" class="text-center">
-        <h2 class="heading-two">Layanan Kami</h2>
-        <p class="paragraph">Kami memotivasi diri kami untuk mengaplikasikan kreativitas dalam setiap
-            proyek, termasuk dalam
-            optimalisasi
-            penggunaan anggaran dan waktu</p>
+        <x-heading-two>Layanan Kami</x-heading-two>
+        <x-paragraph>
+            Kami memotivasi diri kami untuk mengaplikasikan kreativitas dalam setiap
+            proyek, termasuk dalam optimalisasi penggunaan anggaran dan waktu
+        </x-paragraph>
         {{-- Card --}}
         <div class="grid grid-cols-3 gap-7">
             <x-item-service-card>
@@ -50,47 +50,64 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
 
     {{-- Collab Type --}}
     <x-wrapper class="text-center">
-        <h2 class="heading-two">Model Kerja Sama</h2>
-        <p class="paragraph">
-            Sesuaikanlah model proyek dengan kebutuhan yang Anda miliki untuk mencapai hasil yang optimal.</p>
+        <x-heading-two>Model Kerja Sama</x-heading-two>
+        <x-paragraph>
+            Sesuaikanlah model proyek dengan kebutuhan yang Anda miliki untuk mencapai hasil yang optimal.
+        </x-paragraph>
         <div class="grid grid-cols-3 gap-7">
-            <x-item-collaboration-type :href="route('project-based')" title="Project Based"
-                description="Tenaga kerja yang dikhususkan untuk menangani proyek Anda." :benefits="[
-                    'Tim eksklusif yang hanya bekerja untuk Anda.',
-                    'Mengurangi biaya manajemen sumber daya manusia (SDM).',
-                    'Menghilangkan kebutuhan untuk mengurus proses perekrutan.',
-                    'Cocok untuk pengembangan platform digital yang dinamis.',
-                ]"
-                wire:navigate />
+            <x-item-collaboration-type :href="route('project-based')" :benefits="[
+                'Tim eksklusif yang hanya bekerja untuk Anda.',
+                'Mengurangi biaya manajemen sumber daya manusia (SDM).',
+                'Menghilangkan kebutuhan untuk mengurus proses perekrutan.',
+                'Cocok untuk pengembangan platform digital yang dinamis.',
+            ]">
+                <x-slot:title>
+                    Project Based
+                </x-slot:title>
+                <x-slot:description>
+                    Tenaga kerja yang dikhususkan untuk menangani proyek Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
 
-            <x-item-collaboration-type :href="route('dedicated-team')" title="Dedicated Team"
-                description="Tim ahli untuk mengembangkan platform digital bisnis perusahaan Anda." :benefits="[
-                    'Proyek disesuaikan dengan tujuan bisnis Anda.',
-                    'Harga dan jadwal pengerjaan yang transparan.',
-                    'Menawarkan garansi kualitas selama satu bulan.',
-                    'Ideal untuk pengembangan platform digital baru.',
-                ]"
-                wire:navigate />
-            <x-item-collaboration-type :href="route('on-demand')" title="On Demand"
-                description="Tim yang siap untuk menangani segala permasalahan dan kebutuhan platform digital Anda."
-                :benefits="[
-                    'Lebih fleksibel dalam menanggapi kebutuhan Anda.',
-                    'Pengerjaan didasarkan pada permintaan yang diajukan.',
-                    'Menawarkan biaya yang lebih terjangkau.',
-                    'Ideal untuk pengembangan fitur dan pemeliharaan platform.',
-                ]" wire:navigate />
+            <x-item-collaboration-type :href="route('dedicated-team')" :benefits="[
+                'Proyek disesuaikan dengan tujuan bisnis Anda.',
+                'Harga dan jadwal pengerjaan yang transparan.',
+                'Menawarkan garansi kualitas selama satu bulan.',
+                'Ideal untuk pengembangan platform digital baru.',
+            ]">
+                <x-slot:title>
+                    Dedicated Team
+                </x-slot:title>
+                <x-slot:description>
+                    Tim ahli untuk mengembangkan platform digital bisnis perusahaan Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
+
+            <x-item-collaboration-type :href="route('on-demand')" :benefits="[
+                'Lebih fleksibel dalam menanggapi kebutuhan Anda.',
+                'Pengerjaan didasarkan pada permintaan yang diajukan.',
+                'Menawarkan biaya yang lebih terjangkau.',
+                'Ideal untuk pengembangan fitur dan pemeliharaan platform.',
+            ]">
+                <x-slot:title>
+                    On Demand
+                </x-slot:title>
+                <x-slot:description>
+                    Tim yang siap untuk menangani segala permasalahan dan kebutuhan platform digital Anda.
+                </x-slot:description>
+            </x-item-collaboration-type>
         </div>
     </x-wrapper>
 
     {{-- Portfolio --}}
     <x-wrapper bg="bg-secondary" class="text-center">
         <x-carousel carouselNum="2">
-            <div class="lg:space-y-6 xl:space-y-12 xl:mb-24 lg:mb-12">
-                <h2 class="font-semibold heading-two">Portofolio</h2>
-                <p class="mx-auto lg:w-3/4 xl:w-1/2 paragraph">
+            <div class="lg:space-y-6 xl:space-y-12 xl:mb-24 lg:mb-16">
+                <x-heading-two>Portofolio</x-heading-two>
+                <x-paragraph class="mx-auto lg:w-3/4 xl:w-1/2">
                     Dalam beberapa tahun terakhir, pengalaman kami telah membantu klien memulai langkahnya
                     dalam dunia digital. Lihatlah beberapa karya terbaik yang telah kami hasilkan.
-                </p>
+                </x-paragraph>
             </div>
         </x-carousel>
     </x-wrapper>
@@ -124,10 +141,12 @@ new #[Layout('layouts.app')] class extends Component {}; ?>
 
     {{-- Why Choose Us --}}
     <x-wrapper class="text-center">
-        <h2 class="heading-two">Mengapa Memakai Layanan Diggity</h2>
-        <p class="paragraph">Layanan Diggity Cocok untuk Memenuhi Kebutuhan Digitalisasi Bisnis Anda
-            dengan Tepat</p>
-        <div class="grid grid-cols-3 text-start lg:gap-x-4 xl:gap-x-7 lg:gap-y-6 xl:gap-y-12">
+        <x-heading-two>Mengapa Memakai Layanan Diggity</x-heading-two>
+        <x-paragraph>
+            Layanan Diggity Cocok untuk Memenuhi Kebutuhan Digitalisasi Bisnis Anda
+            dengan Tepat
+        </x-paragraph>
+        <div class="grid grid-cols-3 text-start lg:gap-x-4 xl:gap-x-7 lg:gap-y-8 xl:gap-y-12">
             <x-item-service-reason num="1">
                 <x-slot:title>Inovasi Digital dengan Standar Internasional</x-slot:title>
                 Kami berbasis di Yogyakarta, Indonesia, telah berpengalaman bekerja dengan klien dari berbagai

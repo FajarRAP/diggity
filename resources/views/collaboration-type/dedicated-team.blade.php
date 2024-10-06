@@ -10,18 +10,60 @@
 
     <x-slot:benefits>
         <div class="grid grid-cols-2 lg:gap-x-5 xl:gap-x-8 lg:gap-y-8 xl:gap-y-12">
-            <x-item-benefit num="1" title="Kandidat Berkualitas Tinggi"
-                description="Kami melakukan seleksi ketat untuk memastikan setiap kandidat yang kami rekrut memiliki kualitas yang tinggi dalam menyelesaikan tantangan digital Anda." />
-            <x-item-benefit num="2" title="Interview Langsung"
-                description="Anda memiliki kesempatan untuk melakukan wawancara langsung dengan calon karyawan kami, sehingga Anda dapat memastikan bahwa mereka sesuai dengan kebutuhan digital bisnis Anda." />
-            <x-item-benefit num="3" title="Didedikasikan untuk Proyek Anda"
-                description="Setiap sumber daya yang kami sediakan sepenuhnya didedikasikan untuk proyek Anda, memberi Anda fleksibilitas dalam mengatur prioritas digital bisnis Anda." />
-            <x-item-benefit num="4" title="Profesionalisme yang Terbukti"
-                description="Dengan pengalaman sejak tahun 2019, kami telah dipercaya oleh berbagai perusahaan di seluruh dunia, menunjukkan dedikasi kami dalam memenuhi kebutuhan digital dengan profesionalisme yang tinggi." />
-            <x-item-benefit num="5" title="Transparansi dalam Pembayaran"
-                description="Biaya yang Anda bayarkan sesuai dengan penggunaan sumber daya, dihitung berdasarkan jumlah hari kerja dan diberikan tagihan secara bulanan, sehingga Anda dapat melihat jelas apa yang Anda bayar." />
-            <x-item-benefit num="6" title="Fleksibilitas Layanan"
-                description="Layanan tim yang didedikasikan memberikan Anda kebebasan untuk memilih, menyesuaikan jumlah, dan mengelola sumber daya sesuai kebutuhan bisnis perusahaan Anda." />
+            <x-item-benefit num="1">
+                <x-slot:title>
+                    Kandidat Berkualitas Tinggi
+                </x-slot:title>
+                <x-slot:description>
+                    Kami melakukan seleksi ketat untuk memastikan setiap kandidat yang kami rekrut memiliki kualitas
+                    yang tinggi dalam menyelesaikan tantangan digital Anda.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="2">
+                <x-slot:title>
+                    Interview Langsung
+                </x-slot:title>
+                <x-slot:description>
+                    Anda memiliki kesempatan untuk melakukan wawancara langsung dengan calon karyawan kami, sehingga
+                    Anda dapat memastikan bahwa mereka sesuai dengan kebutuhan digital bisnis Anda.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="3">
+                <x-slot:title>
+                    Didedikasikan untuk Proyek Anda
+                </x-slot:title>
+                <x-slot:description>
+                    Setiap sumber daya yang kami sediakan sepenuhnya didedikasikan untuk proyek Anda, memberi Anda
+                    fleksibilitas dalam mengatur prioritas digital bisnis Anda.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="4">
+                <x-slot:title>
+                    Profesionalisme yang Terbukti
+                </x-slot:title>
+                <x-slot:description>
+                    Dengan pengalaman sejak tahun 2019, kami telah dipercaya oleh berbagai perusahaan di seluruh dunia,
+                    menunjukkan dedikasi kami dalam memenuhi kebutuhan digital dengan profesionalisme yang tinggi.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="5">
+                <x-slot:title>
+                    Transparansi dalam Pembayaran
+                </x-slot:title>
+                <x-slot:description>
+                    Biaya yang Anda bayarkan sesuai dengan penggunaan sumber daya, dihitung berdasarkan jumlah hari
+                    kerja dan diberikan tagihan secara bulanan, sehingga Anda dapat melihat jelas apa yang Anda bayar.
+                </x-slot:description>
+            </x-item-benefit>
+            <x-item-benefit num="6">
+                <x-slot:title>
+                    Fleksibilitas Layanan
+                </x-slot:title>
+                <x-slot:description>
+                    Layanan tim yang didedikasikan memberikan Anda kebebasan untuk memilih, menyesuaikan jumlah, dan
+                    mengelola sumber daya sesuai kebutuhan bisnis perusahaan Anda.
+                </x-slot:description>
+            </x-item-benefit>
         </div>
     </x-slot:benefits>
 

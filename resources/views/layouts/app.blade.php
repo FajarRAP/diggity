@@ -13,24 +13,18 @@
 
 <body class="antialiased font-inter">
     <div class="min-h-screen bg-ghost-white dark:bg-gray-900">
-
-        <div class="fixed z-50 flex flex-col items-center lg:gap-6 xl:gap-12 lg:right-16 xl:right-24 bottom-24">
-            <div id="goToTopButton" class="p-2 border-4 border-white rounded-full hover:cursor-pointer">
-                <x-svgs.arrow class="text-white -rotate-90 lg:size-8 xl:size-8"></x-svgs.arrow>
-            </div>
-            <img src="{{ asset('asset/icons/whatsapp.png') }}" alt="whatsapp logo" class="size-14">
-        </div>
-
-        <livewire:layout.navigation />
-
-        <!-- Page Heading -->
-        {{-- @if (isset($header))
-            <header class="bg-white shadow dark:bg-gray-800">
-                <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    {{ $header }}
+        @auth
+            <livewire:layout.auth-navigation />
+        @else
+            {{-- To Top Button --}}
+            <div class="fixed z-50 flex flex-col items-center lg:gap-8 xl:gap-12 lg:right-16 xl:right-24 bottom-24">
+                <div id="goToTopButton" class="p-2 border-4 border-white rounded-full hover:cursor-pointer">
+                    <x-svgs.arrow class="text-white -rotate-90 lg:size-5 xl:size-8"></x-svgs.arrow>
                 </div>
-            </header>
-        @endif --}}
+                <img src="{{ asset('assets/icons/whatsapp.png') }}" alt="whatsapp logo" class="lg:size-11 xl:size-14">
+            </div>
+            <livewire:layout.navigation />
+        @endauth
 
         <!-- Page Content -->
         <main>

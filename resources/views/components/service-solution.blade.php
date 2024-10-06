@@ -1,7 +1,7 @@
 @props(['title', 'description'])
 
 <div class="text-center">
-    <img {{ $attributes->merge(['class' => 'size-20 mx-auto']) }} alt="solution image">
-    <h6 class="font-semibold paragraph lg:mt-3 xl:mt-6 lg:mb-1.5 xl:mb-3">{{ $title }}</h6>
-    <p class="text-xs">{{ $description }}</p>
+    <img {{ $attributes->merge(['class' => 'lg:size-14 xl:size-20 mx-auto']) }} alt="solution image">
+    <x-paragraph class="font-semibold lg:my-2 xl:my-3">{{ $title }}</x-paragraph>
+    <x-paragraph-small>{{ $description }}</x-paragraph-small>
 </div>

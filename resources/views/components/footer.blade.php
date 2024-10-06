@@ -1,75 +1,73 @@
 <div>
-    <div class="flex text-white lg:p-12 xl:p-24 bg-catalina-blue lg:gap-12 xl:gap-36">
-        <div class="flex flex-col gap-12 w-96">
+    <div class="flex text-white lg:p-16 xl:p-24 bg-tertiary lg:gap-24 xl:gap-36">
+        <div class="flex flex-col lg:gap-8 xl:gap-12 w-96">
             <div class="flex items-center lg:gap-4 xl:gap-6">
-                <img src="{{ asset('asset/logo.png') }}" alt="logo" class="lg:size-16 xl:size-24">
+                <img src="{{ asset('assets/logo.png') }}" alt="logo" class="lg:size-16 xl:size-24">
                 <div class="lg:space-y-2 xl:space-y-3">
-                    <h1 class="heading-one">Diggity</h1>
-                    <p class="paragraph">Craft Your Digital Dream</p>
+                    <x-heading-one>Diggity</x-heading-one>
+                    <x-paragraph>Craft Your Digital Dream</x-paragraph>
                 </div>
             </div>
-            <div class="font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <p>Minggiran, Sendangtirto, Kec. Berbah, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55573</p>
-                <p>+62 878-4305-2780</p>
-                <p>info@diggity.co.id</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-paragraph>
+                    Minggiran, Sendangtirto, Kec. Berbah, Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                    55573
+                </x-paragraph>
+                <x-paragraph>+62 878-4305-2780</x-paragraph>
+                <x-paragraph>info@diggity.co.id</x-paragraph>
             </div>
-            <div class="lg:space-y-5 xl:space-y-10">
-                <div class="flex lg:gap-5 xl:gap-10">
-                    <x-svgs.facebook class="my-auto lg:size-7 xl:size-10" />
-                    <x-svgs.instagram class="my-auto lg:size-7 xl:size-10" />
-                    <x-svgs.tiktok class="my-auto lg:size-7 xl:size-10" />
-                </div>
-                <div class="flex lg:gap-5 xl:gap-10">
-                    <x-svgs.twitter class="my-auto lg:size-7 xl:size-10" />
-                    <x-svgs.linkedin class="my-auto lg:size-7 xl:size-10" />
-                    <x-svgs.youtube class="my-auto lg:size-7 xl:size-10" />
-                </div>
+            <div class="grid grid-cols-3 lg:gap-6 xl:gap-10 w-fit">
+                <x-svgs.facebook class="lg:size-7 xl:size-10" />
+                <x-svgs.instagram class="lg:size-7 xl:size-10" />
+                <x-svgs.tiktok class="lg:size-7 xl:size-10" />
+                <x-svgs.twitter class="lg:size-7 xl:size-10" />
+                <x-svgs.linkedin class="lg:size-7 xl:size-10" />
+                <x-svgs.youtube class="lg:size-7 xl:size-10" />
             </div>
         </div>
         <div class="grid grid-cols-3 gap-y-12">
-            <div class="text-lg font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <h2 class="heading-two">Layanan</h2>
-                <p>Layanan Utama</p>
-                <p>Model Kerja Sama</p>
-                <p>Portofolio</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-heading-two>Layanan</x-heading-two>
+                <x-paragraph>Layanan Utama</x-paragraph>
+                <x-paragraph>Model Kerja Sama</x-paragraph>
+                <x-paragraph>Portofolio</x-paragraph>
             </div>
-            <div class="text-lg font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <h2 class="heading-two">Produk</h2>
-                <p>Produk Utama</p>
-                <p>Harga</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-heading-two>Produk</x-heading-two>
+                <x-paragraph>Produk Utama</x-paragraph>
+                <x-paragraph>Harga</x-paragraph>
             </div>
-            <div class="text-lg font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <h2 class="heading-two">Kelas</h2>
-                <p>Kelas Utama</p>
-                <p>Alur Belajar</p>
-                <p>Bootcamp</p>
-                <p>Webinar</p>
-                <p>Universitas dan Perusahaan</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-heading-two>Kelas</x-heading-two>
+                <x-paragraph>Kelas Utama</x-paragraph>
+                <x-paragraph>Alur Belajar</x-paragraph>
+                <x-paragraph>Bootcamp</x-paragraph>
+                <x-paragraph>Webinar</x-paragraph>
+                <x-paragraph>Universitas dan Perusahaan</x-paragraph>
             </div>
-            <div class="text-lg font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <h2 class="heading-two">Panduan</h2>
-                <p>Panduan</p>
-                <p>Kolaborasi</p>
-                <p>Partner Komersial</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-heading-two>Panduan</x-heading-two>
+                <x-paragraph>Panduan</x-paragraph>
+                <x-paragraph>Kolaborasi</x-paragraph>
+                <x-paragraph>Partner Komersial</x-paragraph>
             </div>
-            <div class="text-lg font-medium lg:space-y-3 xl:space-y-6 paragraph">
-                <h2 class="heading-two">Tentang</h2>
-                <p>Tentang Diggity</p>
-                <p>Mengapa Diggity</p>
-                <p>Karir</p>
+            <div class="font-medium lg:space-y-4 xl:space-y-6">
+                <x-heading-two>Tentang</x-heading-two>
+                <x-paragraph>Tentang Diggity</x-paragraph>
+                <x-paragraph>Mengapa Diggity</x-paragraph>
+                <x-paragraph>Karir</x-paragraph>
             </div>
         </div>
     </div>
-    <div
-        class="flex justify-between font-semibold text-white paragraph lg:py-6 xl:py-12 lg:px-12 xl:px-24 bg-oxford-blue">
-        <div class="flex lg:gap-3 xl:gap-6">
-            <p>&copy;</p>
-            <p>Copyright 2024 CV Sinergi Cita Digital</p>
+    <div class="flex justify-between font-semibold text-white lg:py-8 xl:py-12 lg:px-16 xl:px-24 bg-oxford-blue">
+        <div class="flex lg:gap-4 xl:gap-6">
+            <x-paragraph>&copy;</x-paragraph>
+            <x-paragraph>Copyright 2024 CV Sinergi Cita Digital</x-paragraph>
         </div>
-        <div class="flex items-center lg:gap-3 xl:gap-6">
-            <p>Ketentuan Pengguna</p>
+        <div class="flex items-center lg:gap-4 xl:gap-6">
+            <x-paragraph>Ketentuan Pengguna</x-paragraph>
             <div class="bg-white rounded-full lg:size-2 xl:size-3"></div>
-            <p>Kebijakan Privasi</p>
+            <x-paragraph>Kebijakan Privasi</x-paragraph>
         </div>
     </div>
 </div>

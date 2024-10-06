@@ -73,5 +73,7 @@ function goToTop() {
 initCarousel(1);
 initCarousel(2);
 
-const goToTopButton = document.querySelector('#goToTopButton');
-goToTopButton.addEventListener('click', goToTop);
+document.addEventListener('livewire:navigated', ()=> {
+    const goToTopButton = document.querySelector('#goToTopButton');
+    goToTopButton.addEventListener('click', goToTop);
+});

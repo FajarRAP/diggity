@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center mx-32 my-36 xl:gap-12 lg:gap-8">
     <div class="flex items-center gap-6">
-        <img src="{{ asset('asset/logo.png') }}" alt="Diggity Logo" class="size-24">
+        <img src="{{ asset('assets/logo.png') }}" alt="Diggity Logo" class="size-24">
         <div class="flex flex-col gap-5">
             <x-heading-two>Diggity</x-heading-two>
             <x-heading-one>Account</x-heading-one>

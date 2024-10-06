@@ -18,7 +18,7 @@
 
 <body class="font-sans antialiased text-gray-900">
     <div class="grid min-h-screen grid-cols-2 bg-ghost-white">
-        <img src="{{ asset('asset/images/auth/bg-auth.jpg') }}" alt="auth background" class="h-full bg-cover">
+        <img src="{{ asset('assets/images/auth/bg-auth.jpg') }}" alt="auth background" class="h-full bg-cover">
         {{ $slot }}
     </div>
 </body>

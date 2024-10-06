@@ -5,5 +5,5 @@
 @endphp
 
 <input {{ $disabled ? 'disabled' : '' }} {!! $attributes->merge([
-    'class' => "focus:inset-primary px-3 py-2 rounded-md shadow-sm font-normal border placeholder:text-gray-200 focus:outline-primary $border",
+    'class' => "focus:inset-primary px-3 py-2 rounded-md shadow-sm font-normal border placeholder:text-gray-200 focus:outline-primary lg:text-sm xl:text-base $border",
 ]) !!}>

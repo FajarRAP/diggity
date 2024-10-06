@@ -7,25 +7,25 @@
             <x-breadcumb-link href="#">{{ $title }}</x-breadcumb-link>
         </x-breadcumb>
 
-        <x-hero-header :src="asset('asset/images/collaboration_type/header-' . Str::slug($title, '-') . '.jpeg')">
+        <x-hero-header :src="asset('assets/images/collaboration_type/header-' . Str::slug($title, '-') . '.jpeg')">
             <x-slot:type>{{ $title }}</x-slot:type>
-            <x-slot:description>
-                {{ $description }}
-            </x-slot:description>
+            <x-slot:description>{{ $description }}</x-slot:description>
         </x-hero-header>
     </x-wrapper>
 
     {{-- Benefits --}}
     <x-wrapper class="text-center">
-        <h1 class="heading-one">Benefit</h1>
-        <p class="paragraph">Manfaat yang Anda Dapatkan</p>
+        <x-heading-one>Benefit</x-heading-one>
+        <x-paragraph>Manfaat yang Anda Dapatkan</x-paragraph>
         {{ $benefits }}
     </x-wrapper>
 
     {{-- FAQ --}}
     <x-wrapper bg="bg-secondary" :isFaq="true">
-        <h4 class="heading-four text-accent">Frequently Asked Question</h4>
-        <h2 class="xl:mb-12 lg:mb-6 lg:mt-3 xl:mt-6 heading-two">Pelajari Lebih Lanjut</h2>
+        <div class="lg:space-y-4 xl:space-y-6">
+            <x-heading-four class="text-accent">Frequently Asked Question</x-heading-four>
+            <x-heading-two>Pelajari Lebih Lanjut</x-heading-two>
+        </div>
         <div class="flex flex-col lg:gap-4 xl:gap-6">
             {{ $faqs }}
         </div>

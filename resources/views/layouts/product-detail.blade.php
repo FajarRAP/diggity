@@ -11,15 +11,16 @@
         </x-breadcumb>
 
         {{-- Header --}}
-        <div class="grid grid-cols-2 xl:gap-24 lg:gap-12">
-            <div class="flex flex-col xl:gap-6 lg:gap-3.5">
-                <h2 class="heading-two">{{ $title }}</h2>
+        <div class="grid grid-cols-2 xl:gap-24 lg:gap-16">
+            <div class="flex flex-col xl:gap-6 lg:gap-4">
+                <x-heading-two>{{ $title }}</x-heading-two>
                 {{ $description }}
                 <a href="{{ route('contact-us') }}" class="w-fit" wire:navigate>
                     <x-button>Hubungi Kami</x-button>
                 </a>
             </div>
-            <img src="{{ asset('asset/images/carousels/carousel1.jpeg') }}" alt="header image" class="my-auto rounded-2xl">
+            <img src="{{ asset('assets/images/carousels/carousel1.jpeg') }}" alt="header image"
+                class="my-auto rounded-2xl">
         </div>
 
         {{-- Benefits --}}

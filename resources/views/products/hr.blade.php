@@ -8,11 +8,11 @@
     </x-slot:title>
 
     <x-slot:description>
-        <p class="paragraph xl:mt-6 lg:mt-3">
+        <x-paragraph class="lg:mt-3 xl:mt-6">
             Diggity menawarkan solusi terkemuka berbasis cloud yang menyeluruh untuk memenuhi beragam kebutuhan HR,
             karyawan, dan operasional bisnis. Sebagai mitra tepercaya perusahaan dari berbagai sektor, kami menawarkan
             fitur-fitur unggulan berikut:
-        </p>
+        </x-paragraph>
         <x-check-circle
             benefit="Platform HR berbasis cloud yang fleksibel, tanpa biaya implementasi dan pemeliharaan." />
         <x-check-circle benefit="Database HR yang aman, terintegrasi dengan berbagai modul manajemen." />
@@ -25,22 +25,61 @@
     </x-slot:description>
 
     <x-slot:benefits>
-        <h2 class="w-1/2 mx-auto text-center lg:pt-12 xl:pt-24 heading-two">
+        {{-- <h2 class="w-1/2 mx-auto text-center lg:pt-12 xl:pt-24 heading-two"> --}}
+        <x-heading-two class="w-1/2 mx-auto text-center lg:pt-12 xl:pt-24">
             Optimalkan Kesempatan Bisnis Anda Dengan Teknologi Cloud-Based.
-        </h2>
-        <div class="grid grid-cols-3 xl:gap-x-7 lg:gap-x-3.5 xl:gap-y-12 lg:gap-y-8">
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Operasional Efisien dengan Otomatisasi Tugas"
-                description="Mengurangi beban kerja dengan otomatisasi tugas-tugas repetitif untuk fokus pada inisiatif strategis." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Keamanan Data yang Terpercaya"
-                description="Perlindungan data yang andal dengan sistem keamanan tersertifikasi, melampaui solusi HR lainnya." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Layanan Mandiri untuk Karyawan"
-                description="Memberdayakan karyawan dengan layanan mandiri untuk mengurus administrasi sendiri dengan lebih efisien." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Pengambilan Keputusan Cepat dengan Dukungan AI"
-                description="Kecepatan dan akurasi pengambilan keputusan ditingkatkan dengan dukungan AI dan analitik." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Otomatisasi Backup Data untuk Keamanan Bisnis"
-                description="Cegah kehilangan data dan gangguan dengan otomatisasi backup data yang teratur." />
-            <x-item-product-benefit-card :src="asset('asset/images/products/product-detail.png')" title="Mengurangi Kesalahan dengan Otomatisasi Modular"
-                description="Minimalkan risiko kesalahan manusia dengan otomatisasi modular yang fleksibel." />
+        </x-heading-two>
+        <div class="grid grid-cols-3 xl:gap-x-7 lg:gap-x-4 xl:gap-y-12 lg:gap-y-8">
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Operasional Efisien dengan Otomatisasi Tugas
+                </x-slot:title>
+                <x-slot:description>
+                    Mengurangi beban kerja dengan otomatisasi tugas-tugas repetitif untuk fokus pada inisiatif
+                    strategis.
+                </x-slot:description>
+            </x-item-product-benefit-card>
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Keamanan Data yang Terpercaya
+                </x-slot:title>
+                <x-slot:description>
+                    Perlindungan data yang andal dengan sistem keamanan tersertifikasi, melampaui solusi HR lainnya.
+                </x-slot:description>
+            </x-item-product-benefit-card>
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Layanan Mandiri untuk Karyawan
+                </x-slot:title>
+                <x-slot:description>
+                    Memberdayakan karyawan dengan layanan mandiri untuk mengurus administrasi sendiri dengan lebih
+                    efisien.
+                </x-slot:description>
+            </x-item-product-benefit-card>
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Pengambilan Keputusan Cepat dengan Dukungan AI
+                </x-slot:title>
+                <x-slot:description>
+                    Kecepatan dan akurasi pengambilan keputusan ditingkatkan dengan dukungan AI dan analitik.
+                </x-slot:description>
+            </x-item-product-benefit-card>
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Otomatisasi Backup Data untuk Keamanan Bisnis
+                </x-slot:title>
+                <x-slot:description>
+                    Cegah kehilangan data dan gangguan dengan otomatisasi backup data yang teratur.
+                </x-slot:description>
+            </x-item-product-benefit-card>
+            <x-item-product-benefit-card :src="asset('assets/images/products/product-detail.png')">
+                <x-slot:title>
+                    Mengurangi Kesalahan dengan Otomatisasi Modular
+                </x-slot:title>
+                <x-slot:description>
+                    Minimalkan risiko kesalahan manusia dengan otomatisasi modular yang fleksibel.
+                </x-slot:description>
+            </x-item-product-benefit-card>
         </div>
     </x-slot:benefits>
 
@@ -109,6 +148,4 @@
             </x-item-faq>
         </x-faqs>
     </x-slot:faqs>
-
-
 </x-product-detail-layout>
