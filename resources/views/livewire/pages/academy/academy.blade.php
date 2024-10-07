@@ -93,11 +93,12 @@ new #[Layout('layouts.app')] class extends Component {
             Pengembangan Perangkat Lunak,
             Keamanan Siber, Analisis Data, dan Pemasaran Digital.</x-paragraph>
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
-            <x-card.item-our-class />
-            <x-card.item-our-class />
-            <x-card.item-our-class />
+            <x-card.item-class />
+            <x-card.item-class />
+            <x-card.item-class />
         </div>
-        <a href="" class="block font-medium text-end text-primary hover:underline">
+        <a href="{{ route('academy-class') }}" class="block font-medium text-end text-primary hover:underline"
+            wire:navigate>
             <x-paragraph>Lihat Semua Kelas</x-paragraph>
         </a>
     </x-wrapper.transparent>
