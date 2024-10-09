@@ -109,6 +109,7 @@ new class extends Component {
         </div>
     </div>
 </nav> --}}
+
 <nav x-data="{
     services: false,
     products: false,
@@ -119,41 +120,41 @@ new class extends Component {
     isActive(navlink) { return navlink ? 'md:border-primary' : 'md:border-transparent'; },
 }" class="sticky top-0 z-50 bg-white">
     <div class="container flex justify-between mx-auto lg:py-3 xl:py-4">
-        <a href="{{ route('home') }}" class="flex space-x-3">
-            <img src="{{ asset('assets/logo.png') }}" class="size:8 lg:size-10 xl:size-14" alt="Diggity Logo" />
-            <x-heading-two class="self-center whitespace-nowrap dark:text-white">
-                Diggity
-            </x-heading-two>
+        {{-- Logo --}}
+        <a href="{{ route('home') }}" class="flex items-center space-x-3">
+            <img src="{{ asset('assets/logo.png') }}" class="lg:size-10 xl:size-14" alt="Diggity Logo" />
+            <x-fonts.heading-two text="Diggity" />
         </a>
+        {{-- Nav Links --}}
         <div class="flex items-center justify-between w-auto font-medium">
             <ul class="flex items-center lg:gap-8 xl:gap-12">
                 <li>
                     <x-nav-link x-on:click="services=!services" x-bind:class="isActive(services)">
-                        <x-paragraph>Layanan</x-paragraph>
+                        <x-fonts.paragraph text="Layanan" />
                     </x-nav-link>
                 </li>
                 <li>
                     <x-nav-link x-on:click="products=!products" x-bind:class="isActive(products)"
                         x-on:click.outside="products=false">
-                        <x-paragraph>Produk</x-paragraph>
+                        <x-fonts.paragraph text="Produk" />
                     </x-nav-link>
                 </li>
                 <li>
                     <x-nav-link x-on:click="courses=!courses" x-bind:class="isActive(courses)"
                         x-on:click.outside="courses=false">
-                        <x-paragraph>Kelas</x-paragraph>
+                        <x-fonts.paragraph text="Kelas" />
                     </x-nav-link>
                 </li>
                 <li>
                     <x-nav-link x-on:click="guides=!guides" x-bind:class="isActive(guides)"
                         x-on:click.outside="guides=false">
-                        <x-paragraph>Panduan</x-paragraph>
+                        <x-fonts.paragraph text="Panduan" />
                     </x-nav-link>
                 </li>
                 <li>
                     <x-nav-link x-on:click="about=!about" x-bind:class="isActive(about)"
                         x-on:click.outside="about=false">
-                        <x-paragraph>Tentang</x-paragraph>
+                        <x-fonts.paragraph text="Tentang" />
                     </x-nav-link>
                 </li>
                 <li>
@@ -161,18 +162,18 @@ new class extends Component {
                         x-on:click.outside="langs=false">
                         <div class="flex items-center">
                             <x-svgs.globe class="me-2 xl:size-6 lg:size-4" />
-                            <x-paragraph>ID</x-paragraph>
+                            <x-fonts.paragraph text="ID" />
                         </div>
                     </x-nav-link>
                 </li>
                 <li>
                     <a href="{{ route('login') }}" class="block" wire:navigate>
-                        <x-outline-button>Sign In</x-outline-button>
+                        <x-outline-button text="Sign In" />
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('register') }}" class="block" wire:navigate>
-                        <x-button>Sign Up</x-button>
+                        <x-button text="Sign Up" />
                     </a>
                 </li>
             </ul>
@@ -183,34 +184,21 @@ new class extends Component {
     <x-mega-menu x-show="services" x-on:click.outside="services=false" x-data="{ active: 0 }">
         <x-slot:link>
             <li>
-                <x-mega-menu-link @click="active = 0" num="0">
-                    <x-slot:title>Layanan Utama</x-slot:title>
-                    <x-slot:description>
-                        Layanan terbaik yang diformulasikan untuk menjawab kebutuhan Anda akan
-                        teknologi dan digitalisasi produk.
-                    </x-slot:description>
-                </x-mega-menu-link>
+                <x-mega-menu-link x-on:click="active = 0" num="0" title="Layanan Utama"
+                    description="Layanan terbaik yang diformulasikan untuk menjawab kebutuhan Anda akan
+                        teknologi dan digitalisasi produk." />
             </li>
             <li>
-                <x-mega-menu-link @click="active = 1" num="1">
-                    <x-slot:title>Model Kerja Sama</x-slot:title>
-                    <x-slot:description>
-                        Project model yang sesuai dengan kebutuhan Anda
-                    </x-slot:description>
-                </x-mega-menu-link>
+                <x-mega-menu-link x-on:click="active = 1" num="1" title="Model Kerja Sama"
+                    description="Project model yang sesuai dengan kebutuhan Anda" />
             </li>
             <li>
-                <x-mega-menu-link @click="active = 2" num="2">
-                    <x-slot:title>Portfolio</x-slot:title>
-                    <x-slot:description>
-                        Merupakan suatu kehormatan bagi kami untuk menampilkan karya terbaik kami
-                    </x-slot:description>
-                </x-mega-menu-link>
+                <x-mega-menu-link x-on:click="active = 2" num="2" title="Portfolio"
+                    description="Merupakan suatu kehormatan bagi kami untuk menampilkan karya terbaik kami" />
             </li>
         </x-slot:link>
         <x-slot:content>
-            <x-mega-menu-content x-show="active === 0">
-                <x-slot:title>Layanan Utama</x-slot:title>
+            <x-mega-menu-content x-show="active === 0" title="Layanan Utama">
                 <x-slot:items>
                     <x-mega-menu-content-item title="Website Development"
                         description="Bangun website yang cepat, efektif, dan mudah digunakan" />
@@ -225,23 +213,24 @@ new class extends Component {
                     <x-mega-menu-content-item title="Digital Marketing"
                         description="Pemasaran digital untuk berbagai tahapan bisnis Anda" />
                 </x-slot:items>
-                <x-slot:more>
-                    <x-mega-menu-content-more contentType="Layanan" />
-                </x-slot:more>
+
+                <x-mega-menu-content-more contentType="Layanan" href="" />
             </x-mega-menu-content>
-            <x-mega-menu-content x-show="active === 1">
-                <x-slot:title>Model Kerja Sama</x-slot:title>
-                <x-slot:items></x-slot:items>
-                <x-slot:more>
-                    <x-mega-menu-content-more contentType="Model Kerja Sama" />
-                </x-slot:more>
+            <x-mega-menu-content x-show="active === 1" title="Model Kerja Sama">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Dedicated Team"
+                        description="Staff yang didedikasikan khusus untuk mengerjakan project Anda" />
+                    <x-mega-menu-content-item title="Project Based"
+                        description="Tim profesional untuk mengembangkan platform digital bisnis perusahaan Anda" />
+                    <x-mega-menu-content-item title="On Demand"
+                        description="Tim yang siap sedia untuk permasalahan dan kebutuhan platform digital Anda" />
+                </x-slot:items>
             </x-mega-menu-content>
-            <x-mega-menu-content x-show="active === 2">
-                <x-slot:title>Portofolio</x-slot:title>
-                <x-slot:items></x-slot:items>
-                <x-slot:more>
-                    <x-mega-menu-content-more :href="route('portfolio')" contentType="Portofolio" />
-                </x-slot:more>
+            <x-mega-menu-content x-show="active === 2" title="Portofolio">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Portofolio"
+                        description="Kualitas terbaik pada setiap hasil project dan kolaborasi yang telah kami kerjakan" />
+                </x-slot:items>
             </x-mega-menu-content>
         </x-slot:content>
     </x-mega-menu>

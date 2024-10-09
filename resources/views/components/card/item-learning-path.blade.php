@@ -4,9 +4,9 @@
     <div class="flex items-center gap-2">
         <img src="{{ $src }}" alt="path image" class="rounded-full xl:size-20 lg:size-14">
         <div class="flex flex-col">
-            <x-paragraph class="font-semibold">{{ $title }}</x-paragraph>
-            <x-paragraph-small class="text-gray-500">Tersedia {{ $classes }} Kelas</x-paragraph-small>
+            <x-fonts.paragraph class="font-semibold" :text="$title" />
+            <x-fonts.paragraph-small class="text-gray-500" text="Tersedia {{ $classes }} Kelas" />
         </div>
     </div>
-    <x-button class="mx-auto">Lihat Alur Belajar</x-button>
+    <x-button class="mx-auto" text="Lihat Alur Belajar" />
 </x-card>

@@ -5,7 +5,8 @@ import { Carousel } from 'flowbite';
 function initCarousel(carouselNum) {
     const carouselElement = document.getElementById(`default-carousel-${carouselNum}`);
     if (carouselElement) {
-        const items = [{
+        const items = [
+        {
             position: 0,
             el: document.getElementById(`c-item-1-${carouselNum}`)
         },
@@ -46,9 +47,9 @@ function initCarousel(carouselNum) {
                 },
                 ],
             },
-            onNext: () => console.log('next'),
-            onPrev: () => console.log('prev'),
-            onChange: () => console.log('new item'),
+            // onNext: () => console.log('next'),
+            // onPrev: () => console.log('prev'),
+            // onChange: () => console.log('new item'),
 
         };
 

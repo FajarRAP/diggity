@@ -30,3 +30,5 @@ require __DIR__ . '/service.php';
 require __DIR__ . '/product.php';
 require __DIR__ . '/price.php';
 require __DIR__ . '/auth.php';
+
+// 100px, 80px, 60px, 20px
