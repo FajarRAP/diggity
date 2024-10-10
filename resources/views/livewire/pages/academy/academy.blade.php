@@ -329,12 +329,8 @@ new #[Layout('layouts.app')] class extends Component {
             <x-button class="shrink-0">Cisco Certified Support Technician</x-button>
         </div>
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
-            <x-card.item-certification-program />
-            <x-card.item-certification-program />
-            <x-card.item-certification-program />
-            <x-card.item-certification-program />
-            <x-card.item-certification-program />
-            <x-card.item-certification-program />
+            <x-card.item-certification-program title="Certification Title" price="Certification Price" />
+
         </div>
         <a href="" class="block font-medium text-end text-primary hover:underline">
             <x-paragraph>Lihat Semua Sertifikasi</x-paragraph>

@@ -1,10 +1,10 @@
 @props(['title', 'description', 'badges'])
 
-<x-card class="space-y-3">
+<x-card class="lg:space-y-2 xl:space-y-3">
     <img src="{{ asset('assets/images/carousels/carousel1.jpeg') }}" alt="custom training image"
         class="rounded-full xl:size-16 lg:size-10">
-    <x-paragraph class="font-semibold">{{ $title }}</x-paragraph>
-    <x-paragraph-small class="pb-3 border-b">{{ $description }}</x-paragraph-small>
+    <x-fonts.paragraph class="font-semibold" :text="$title" />
+    <x-fonts.paragraph-small class="pb-3 border-b" :text="$description" />
     <div class="flex flex-wrap gap-3">
         @foreach ($badges as $badge)
             <x-badges.primary :text="$badge" />

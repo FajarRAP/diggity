@@ -31,6 +31,7 @@ export default {
                 'secondary': '#D8E4FD',
                 'tertiary': '#14286D',
                 'accent': '#00BE5F',
+                'inverse-accent': '#00A25117'
             },
             fontSize: {
                 'xxs': '10px'

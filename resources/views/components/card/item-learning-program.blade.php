@@ -4,7 +4,7 @@
     <div class="space-y-1.5">
         <img src="{{ asset('assets/images/carousels/carousel1.jpeg') }}" alt="learning program"
             class="rounded-full xl:size-20 lg:size-14">
-        <x-paragraph class="font-semibold">{{ $title }}</x-paragraph>
+        <x-fonts.paragraph class="font-semibold" :text="$title" />
         <x-fonts.paragraph-extra-small class="pb-3 border-b" :text="$description" />
     </div>
     <x-fonts.paragraph-extra-small text="Topik yang dibahas mencakup:" />
@@ -12,7 +12,7 @@
         @foreach ($topics as $topic)
             <div class="flex items-center gap-3">
                 <x-svgs.ribbon class="xl:size-5 lg:size-3.5 fill-orange-400" />
-                <x-paragraph class="w-full font-semibold">{{ $topic }}</x-paragraph>
+                <x-fonts.paragraph class="w-full font-semibold" :text="$topic" />
             </div>
         @endforeach
     </div>
