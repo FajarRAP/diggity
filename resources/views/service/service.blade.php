@@ -11,42 +11,24 @@
     {{-- Our Services --}}
     <x-wrapper.transparent>
         <x-fonts.heading-two text="Layanan yang Kami Sediakan" />
-        <a href="{{ route('s-web-dev') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-website-development.jpg')" title="Website Development"
-                description="Dengan bantuan tim developer yang berpengalaman, kami selalu memperhitungkan kesesuaian teknologi dengan kebutuhan masing-masing bisnis. Kami memastikan bahwa situs web yang kami bangun tidak hanya cepat, tetapi juga ramah terhadap SEO dan user-friendly." />
-        </a>
-        <a href="{{ route('s-mobile-dev') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-mobile-app-development.jpg')" title="Mobile App Development"
-                description="Optimalkan mobilitas dan reputasi merek bisnis Anda melalui pengembangan aplikasi mobile (Android & iOS). Capai lebih banyak dan persiapkan bisnis Anda untuk bersaing di era digital saat ini." />
-        </a>
-        <a href="{{ route('s-product-dev') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-mvp-development.jpg')" title="MVP Development"
-                description="MVP Development Mendapatkan wawasan bisnis dari setiap ide dan konsep melalui pengembangan Minimum Viable Product (MVP). Bangun produk MVP bersama kami untuk menemukan solusi untuk setiap peluang di pasar digital saat ini." />
-        </a>
-        <a href="{{ route('s-custom-dev') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-custom-software-development.jpg')" title="Custom Software Development"
-                description="Optimalkan perkembangan bisnis dengan mengembangkan  digital yang sesuai dan cocok dengan kebutuhan perusahaan Anda. Tingkatkan efisiensi setiap langkah bisnis untuk mempermudah dan mempercepat prosesnya." />
-        </a>
-        <a href="{{ route('s-ui-ux') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-uiux-design.jpg')" title="UI/UX Design"
-                description="Layanan ini ditujukan bagi Anda yang menganggap komunikasi visual sebagai elemen krusial dalam menyampaikan pesan, visi, dan misi perusahaan Anda. Efektivitas pengalaman pengguna dalam menggunakan Anda akan memengaruhi tingkat konversi tindakan yang dilakukan oleh pengguna tersebut." />
-        </a>
-        <a href="{{ route('s-devops') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-devops-solution.jpg')" title="DevOps Solution"
-                description="Kami hadir untuk meningkatkan efisiensi dan keandalan proyek Anda. Bersiaplah untuk menyederhanakan pengiriman perangkat lunak Anda dengan kolaborasi bersama kami. Mari bergandengan tangan dalam menciptakan saluran yang siap menghadapi masa depan. Mulailah perjalanan DevOps Anda sekarang!" />
-        </a>
-        <a href="{{ route('s-system-testing') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-system-testing.jpg')" title="System Testing"
-                description="Dengan keahlian pengujian kami, kami memastikan bahwa perangkat lunak Anda siap untuk mengatasi berbagai tantangan. Jika Anda siap untuk meningkatkan kekuatan kode Anda, mari kita bekerja sama untuk memastikan kualitasnya!" />
-        </a>
-        <a href="{{ route('s-big-data') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-big-data-services.jpg')" title="Big Data Services"
-                description="Optimalkan pendapatan bisnis Anda dengan keputusan yang didukung oleh data. Layanan Big Data kami memberi Anda kekuatan untuk mengekstrak wawasan yang dapat diambil tindakan, meningkatkan efisiensi operasional, dan membuat keputusan berdasarkan informasi yang mengarah pada kesuksesan jangka panjang dalam era data yang sangat penting saat ini." />
-        </a>
-        <a href="{{ route('s-digital-marketing') }}" class="block" wire:navigate>
-            <x-card.item-our-service :src="asset('assets/images/services/pages/icon-digital-marketing.jpg')" title="Digital Marketing"
-                description="Mendukung beragam jenis bisnis Anda, mulai dari skala kecil seperti bisnis rumahan dan UMKM, hingga bisnis rintisan (startup) dan perusahaan besar, dalam menerapkan strategi pemasaran digital yang efektif." />
-        </a>
+        <x-card.item-our-service :href="route('s-web-dev')" :src="asset('assets/images/services/pages/icon-website-development.jpg')" title="Website Development"
+            description="Dengan bantuan tim developer yang berpengalaman, kami selalu memperhitungkan kesesuaian teknologi dengan kebutuhan masing-masing bisnis. Kami memastikan bahwa situs web yang kami bangun tidak hanya cepat, tetapi juga ramah terhadap SEO dan user-friendly." />
+        <x-card.item-our-service :href="route('s-mobile-dev')" :src="asset('assets/images/services/pages/icon-mobile-app-development.jpg')" title="Mobile App Development"
+            description="Optimalkan mobilitas dan reputasi merek bisnis Anda melalui pengembangan aplikasi mobile (Android & iOS). Capai lebih banyak dan persiapkan bisnis Anda untuk bersaing di era digital saat ini." />
+        <x-card.item-our-service :href="route('s-product-dev')" :src="asset('assets/images/services/pages/icon-mvp-development.jpg')" title="MVP Development"
+            description="MVP Development Mendapatkan wawasan bisnis dari setiap ide dan konsep melalui pengembangan Minimum Viable Product (MVP). Bangun produk MVP bersama kami untuk menemukan solusi untuk setiap peluang di pasar digital saat ini." />
+        <x-card.item-our-service :href="route('s-custom-dev')" :src="asset('assets/images/services/pages/icon-custom-software-development.jpg')" title="Custom Software Development"
+            description="Optimalkan perkembangan bisnis dengan mengembangkan  digital yang sesuai dan cocok dengan kebutuhan perusahaan Anda. Tingkatkan efisiensi setiap langkah bisnis untuk mempermudah dan mempercepat prosesnya." />
+        <x-card.item-our-service :href="route('s-ui-ux')" :src="asset('assets/images/services/pages/icon-uiux-design.jpg')" title="UI/UX Design"
+            description="Layanan ini ditujukan bagi Anda yang menganggap komunikasi visual sebagai elemen krusial dalam menyampaikan pesan, visi, dan misi perusahaan Anda. Efektivitas pengalaman pengguna dalam menggunakan Anda akan memengaruhi tingkat konversi tindakan yang dilakukan oleh pengguna tersebut." />
+        <x-card.item-our-service :href="route('s-devops')" :src="asset('assets/images/services/pages/icon-devops-solution.jpg')" title="DevOps Solution"
+            description="Kami hadir untuk meningkatkan efisiensi dan keandalan proyek Anda. Bersiaplah untuk menyederhanakan pengiriman perangkat lunak Anda dengan kolaborasi bersama kami. Mari bergandengan tangan dalam menciptakan saluran yang siap menghadapi masa depan. Mulailah perjalanan DevOps Anda sekarang!" />
+        <x-card.item-our-service :href="route('s-system-testing')" :src="asset('assets/images/services/pages/icon-system-testing.jpg')" title="System Testing"
+            description="Dengan keahlian pengujian kami, kami memastikan bahwa perangkat lunak Anda siap untuk mengatasi berbagai tantangan. Jika Anda siap untuk meningkatkan kekuatan kode Anda, mari kita bekerja sama untuk memastikan kualitasnya!" />
+        <x-card.item-our-service :href="route('s-big-data')" :src="asset('assets/images/services/pages/icon-big-data-services.jpg')" title="Big Data Services"
+            description="Optimalkan pendapatan bisnis Anda dengan keputusan yang didukung oleh data. Layanan Big Data kami memberi Anda kekuatan untuk mengekstrak wawasan yang dapat diambil tindakan, meningkatkan efisiensi operasional, dan membuat keputusan berdasarkan informasi yang mengarah pada kesuksesan jangka panjang dalam era data yang sangat penting saat ini." />
+        <x-card.item-our-service :href="route('s-digital-marketing')" :src="asset('assets/images/services/pages/icon-digital-marketing.jpg')" title="Digital Marketing"
+            description="Mendukung beragam jenis bisnis Anda, mulai dari skala kecil seperti bisnis rumahan dan UMKM, hingga bisnis rintisan (startup) dan perusahaan besar, dalam menerapkan strategi pemasaran digital yang efektif." />
     </x-wrapper.transparent>
 
     {{-- Contact Us Service --}}

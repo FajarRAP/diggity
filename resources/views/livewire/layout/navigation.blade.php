@@ -118,10 +118,10 @@ new class extends Component {
     about: false,
     langs: false,
     isActive(navlink) { return navlink ? 'md:border-primary' : 'md:border-transparent'; },
-}" class="sticky top-0 z-50 bg-white">
+}" class="sticky top-0 z-50 bg-white shadow-navigation">
     <div class="container flex justify-between mx-auto lg:py-3 xl:py-4">
         {{-- Logo --}}
-        <a href="{{ route('home') }}" class="flex items-center space-x-3">
+        <a href="{{ route('home') }}" class="flex items-center space-x-3" wire:navigate>
             <img src="{{ asset('assets/logo.png') }}" class="lg:size-10 xl:size-14" alt="Diggity Logo" />
             <x-fonts.heading-two text="Diggity" />
         </a>
@@ -201,20 +201,23 @@ new class extends Component {
             <x-mega-menu-content x-show="active === 0" title="Layanan Utama">
                 <x-slot:items>
                     <x-mega-menu-content-item title="Website Development"
-                        description="Bangun website yang cepat, efektif, dan mudah digunakan" />
+                        description="Bangun website yang cepat, efektif, dan mudah digunakan" :href="route('s-web-dev')" />
                     <x-mega-menu-content-item title="Mobile App Development"
-                        description="Tingkatkan mobilitas dan brand bisnis dengan membangun aplikasi mobile (Android & iOS)" />
+                        description="Tingkatkan mobilitas dan brand bisnis dengan membangun aplikasi mobile (Android & iOS)"
+                        :href="route('s-mobile-dev')" />
                     <x-mega-menu-content-item title="MVP Development"
-                        description="Ketahui peluang bisnis dari setiap ide dan gagasan dengan mengembangkan produk MVP" />
+                        description="Ketahui peluang bisnis dari setiap ide dan gagasan dengan mengembangkan produk MVP"
+                        :href="route('s-product-dev')" />
                     <x-mega-menu-content-item title="Custom Software Development"
-                        description="Percepat laju bisnis dengan membangun platform digital yang tepat dan sesuai kebutuhan bisnis perusahaan." />
+                        description="Percepat laju bisnis dengan membangun platform digital yang tepat dan sesuai kebutuhan bisnis perusahaan."
+                        :href="route('s-custom-dev')" />
                     <x-mega-menu-content-item title="UI/UX Design"
-                        description="Desain komunikasi visual merupakan satu hal penting" />
+                        description="Desain komunikasi visual merupakan satu hal penting" :href="route('s-ui-ux')" />
                     <x-mega-menu-content-item title="Digital Marketing"
-                        description="Pemasaran digital untuk berbagai tahapan bisnis Anda" />
+                        description="Pemasaran digital untuk berbagai tahapan bisnis Anda" :href="route('s-digital-marketing')" />
                 </x-slot:items>
 
-                <x-mega-menu-content-more contentType="Layanan" href="" />
+                <x-mega-menu-content-more contentType="Layanan" :href="route('service')" />
             </x-mega-menu-content>
             <x-mega-menu-content x-show="active === 1" title="Model Kerja Sama">
                 <x-slot:items>
