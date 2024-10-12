@@ -41,8 +41,7 @@ new class extends Component {
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link x-on:click="products=!products" x-bind:class="isActive(products)"
-                        x-on:click.outside="products=false">
+                    <x-nav-link x-on:click="products=!products" x-bind:class="isActive(products)">
                         <x-fonts.paragraph text="Produk" />
                     </x-nav-link>
                 </li>
@@ -144,6 +143,47 @@ new class extends Component {
                     <x-mega-menu-content-item title="Portofolio"
                         description="Kualitas terbaik pada setiap hasil project dan kolaborasi yang telah kami kerjakan"
                         :href="route('portfolio')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+        </x-slot:content>
+    </x-mega-menu>
+
+    {{-- Mega Menu Product --}}
+    <x-mega-menu x-show="products" x-on:click.outside="products=false" x-data="{ active: 0 }">
+        <x-slot:link>
+            <li>
+                <x-mega-menu-link x-on:click="active = 0" num="0" title="Produk Utama"
+                    description="Inovasi software-as-a-service untuk manajemen bisnis" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 1" num="1" title="Harga"
+                    description="Temukan pilihan paket harga yang tepat untuk kebutuhan bisnis Anda" />
+            </li>
+        </x-slot:link>
+        <x-slot:content>
+            <x-mega-menu-content x-show="active === 0" title="Produk Utama">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Diggity HR" description="Software HR & manajemen karyawan"
+                        :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Diggity Contact" description=" Software CRM & omnichannel"
+                        :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="Diggity Accounting"
+                        description=" Software akuntansi & supply chain" :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Diggity Tax"
+                        description="Software manajemen pajak karyawan & bisnis" :href="route('product-tax')" />
+                    <x-mega-menu-content-item title="Diggity Benefit" description="Software manajemen dukungan karyawan"
+                        :href="route('product-benefit-management')" />
+                    <x-mega-menu-content-item title="Diggity Signature"
+                        description="Software otorisasi & tanda tangan digital" :href="route('product-sign')" />
+                </x-slot:items>
+
+                <x-mega-menu-content-more contentType="Produk" :href="route('product')" />
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 1" title="Model Kerja Sama">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Harga"
+                        description="Anda dapat memilih antara paket bulanan atau tahunan, sesuai dengan kebutuhan bisnis Anda."
+                        :href="route('price')" />
                 </x-slot:items>
             </x-mega-menu-content>
         </x-slot:content>
