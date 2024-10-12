@@ -1,108 +1,49 @@
-<x-collaboration-type-layout prev="Dedicated Team" next="Project Based">
-    <x-slot:title>
-        On Demand
-    </x-slot:title>
-
-    <x-slot:description>
-        Tidak ada platform digital yang benar-benar sempurna. Itulah mengapa Diggity hadir sebagai solusi cepat
-        untuk meningkatkan performa platform digital perusahaan Anda. Kami siap membantu dalam menangani
-        perbaikan bug dan penyesuaian fitur agar platform Anda dapat berjalan lebih optimal.
-    </x-slot:description>
+<x-collaboration-type-layout prev="Dedicated Team" next="Project Based" title="On Demand"
+    description="Tidak ada platform digital yang benar-benar sempurna. Itulah mengapa Diggity hadir sebagai solusi cepat untuk meningkatkan performa platform digital perusahaan Anda. Kami siap membantu dalam menangani perbaikan bug dan penyesuaian fitur agar platform Anda dapat berjalan lebih optimal.">
 
     <x-slot:benefits>
-        <div class="grid grid-cols-2 lg:gap-x-5 xl:gap-x-8 lg:gap-y-8 xl:gap-y-12">
-            <x-item-benefit num="1">
-                <x-slot:title>
-                    Pelayanan Utama untuk Klien yang Sudah Ada
-                </x-slot:title>
-                <x-slot:description>
-                    Kami mengutamakan pelayanan bagi klien yang telah menjadi bagian dari kami, untuk memastikan setiap
-                    kebutuhan dan tantangan yang muncul pada platform digital mereka diperhatikan dengan seksama.
-                    Mencakup perbaikan bug serta pengembangan fitur yang sesuai dengan kebutuhan.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="2">
-                <x-slot:title>
-                    Sumber Daya yang Disesuaikan
-                </x-slot:title>
-                <x-slot:description>
-                    Dengan beragam sumber daya yang tersedia, Diggity dapat menyesuaikan tim yang tepat untuk menangani
-                    setiap masalah yang dihadapi pada platform digital Anda. Kami memastikan bahwa penanganan masalah
-                    tersebut dilakukan oleh tenaga ahli yang kompeten.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="3">
-                <x-slot:title>
-                    Biaya yang Terjangkau
-                </x-slot:title>
-                <x-slot:description>
-                    Kami menawarkan opsi biaya yang bersahabat dengan menghitung penggunaan sumber daya sesuai dengan
-                    perkiraan waktu pengerjaan. Pembayaran dilakukan secara bulanan, memberikan keterbukaan dan
-                    kejelasan dalam pengeluaran.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="4">
-                <x-slot:title>
-                    Pengerjaan yang Fleksibel
-                </x-slot:title>
-                <x-slot:description>
-                    Kami memberikan kebebasan kepada Anda untuk memprioritaskan proyek berdasarkan kebutuhan bisnis
-                    Anda. Ini memastikan fleksibilitas dan efisiensi dalam penyelesaian proyek Anda sesuai dengan waktu
-                    dan prioritas yang ditetapkan.
-                </x-slot:description>
-            </x-item-benefit>
+        <div class="grid grid-cols-2 lg:gap-x-5 xl:gap-x-7 lg:gap-y-8 xl:gap-y-12">
+            <x-item-benefit title="Pelayanan Utama untuk Klien yang Sudah Ada"
+                description="Kami mengutamakan pelayanan bagi klien yang telah menjadi bagian dari kami, untuk memastikan setiap kebutuhan dan tantangan yang muncul pada platform digital mereka diperhatikan dengan seksama. Mencakup perbaikan bug serta pengembangan fitur yang sesuai dengan kebutuhan."
+                num="1" />
+            <x-item-benefit title="Sumber Daya yang Disesuaikan"
+                description="Dengan beragam sumber daya yang tersedia, Diggity dapat menyesuaikan tim yang tepat untuk menangani setiap masalah yang dihadapi pada platform digital Anda. Kami memastikan bahwa penanganan masalah tersebut dilakukan oleh tenaga ahli yang kompeten."
+                num="2" />
+            <x-item-benefit title="Biaya yang Terjangkau"
+                description="Kami menawarkan opsi biaya yang bersahabat dengan menghitung penggunaan sumber daya sesuai dengan perkiraan waktu pengerjaan. Pembayaran dilakukan secara bulanan, memberikan keterbukaan dan kejelasan dalam pengeluaran."
+                num="3" />
+            <x-item-benefit title="Pengerjaan yang Fleksibel"
+                description="Kami memberikan kebebasan kepada Anda untuk memprioritaskan proyek berdasarkan kebutuhan bisnis Anda. Ini memastikan fleksibilitas dan efisiensi dalam penyelesaian proyek Anda sesuai dengan waktu dan prioritas yang ditetapkan."
+                num="4" />
         </div>
     </x-slot:benefits>
 
     <x-slot:faqs>
         <div class="flex flex-col lg:gap-4 xl:gap-6">
-            <x-item-faq>
-                <x-slot:question>
-                    Apa itu model kerjasama on-demand?
-                </x-slot:question>
-                <x-slot:answer>
-                    Model kerjasama on-demand adalah ketika Diggity menyediakan jasa pengembangan perangkat lunak sesuai
+            <x-item-faq question="Apa itu model kerjasama on-demand?"
+                answer="Model kerjasama on-demand adalah ketika Diggity menyediakan jasa pengembangan perangkat lunak sesuai
                     dengan kebutuhan klien. Dalam model ini, klien dapat memesan jasa pengembangan sesuai kebutuhan
-                    tanpa harus menentukan jangka waktu atau volume proyek tertentu.
-                </x-slot:answer>
-            </x-item-faq>
-            <x-item-faq>
-                <x-slot:question>
-                    Bagaimana mekanisme model kerjasama on-demand di Diggity?
-                </x-slot:question>
+                    tanpa harus menentukan jangka waktu atau volume proyek tertentu." />
+            <x-item-faq question="Bagaimana mekanisme model kerjasama on-demand di Diggity?">
                 <x-slot:answer>
                     Beberapa mekanisme model kerjasama on-demand di Diggity adalah sebagai berikut:
-                    <ol class="list-disc ps-5">
+                    <ul class="list-disc ps-5">
                         <li>Klien memberikan detail tentang flow bisnis sistem atau platform yang akan dikembangkan,
                             termasuk fitur dan maintenance.</li>
                         <li>Diggity melakukan estimasi kebutuhan, termasuk timeline dan biaya.</li>
                         <li>Setelah kesepakatan harga dan timeline, tim Diggity mulai mengerjakan proyek sesuai dengan
                             specification document yang disepakati.</li>
-                    </ol>
+                    </ul>
                 </x-slot:answer>
             </x-item-faq>
-            <x-item-faq>
-                <x-slot:question>
-                    Siapa yang akan terlibat dalam pengerjaan proyek menggunakan model kerjasama on-demand?
-                </x-slot:question>
-                <x-slot:answer>
-                    Proyek on-demand umumnya melibatkan project-manager untuk memantau pengembangan proyek, serta
-                    developer atau staf IT lainnya yang mengerjakan proyek tersebut.
-                </x-slot:answer>
-            </x-item-faq>
-            <x-item-faq>
-                <x-slot:question>
-                    Berapa biaya pengerjaan proyek menggunakan model kerjasama on-demand?
-                </x-slot:question>
-                <x-slot:answer>
-                    Biaya pengerjaan proyek hanya berdasarkan waktu yang dibutuhkan oleh tim untuk menyelesaikannya,
-                    biasanya dihitung berdasarkan jam pengerjaan.
-                </x-slot:answer>
-            </x-item-faq>
-            <x-item-faq>
-                <x-slot:question>
-                    Apa keuntungan memilih model kerjasama on-demand di Diggity?
-                </x-slot:question>
+            <x-item-faq
+                question="Siapa yang akan terlibat dalam pengerjaan proyek menggunakan model kerjasama on-demand?"
+                answer="Proyek on-demand umumnya melibatkan project-manager untuk memantau pengembangan proyek, serta
+                    developer atau staf IT lainnya yang mengerjakan proyek tersebut." />
+            <x-item-faq question="Berapa biaya pengerjaan proyek menggunakan model kerjasama on-demand?"
+                answer="Biaya pengerjaan proyek hanya berdasarkan waktu yang dibutuhkan oleh tim untuk menyelesaikannya,
+                    biasanya dihitung berdasarkan jam pengerjaan." />
+            <x-item-faq question="Apa keuntungan memilih model kerjasama on-demand di Diggity?">
                 <x-slot:answer>
                     Beberapa keuntungan memilih model kerjasama on-demand di Diggity meliputi:
                     <ul class="list-disc ps-5">

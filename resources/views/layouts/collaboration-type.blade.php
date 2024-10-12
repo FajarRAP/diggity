@@ -1,53 +1,47 @@
-@props(['prev', 'next'])
+@props(['prev', 'next', 'title', 'description'])
 
 <x-app-layout>
     {{-- Top Breadcumb & Header --}}
-    <x-wrapper bg="bg-secondary">
+    <x-wrapper.inverse-primary>
         <x-breadcumb>
-            <x-breadcumb-link href="#">{{ $title }}</x-breadcumb-link>
+            <x-breadcumb-link href="#" :link="$title" />
         </x-breadcumb>
 
-        <x-hero-header :src="asset('assets/images/collaboration_type/header-' . Str::slug($title, '-') . '.jpeg')">
-            <x-slot:type>{{ $title }}</x-slot:type>
-            <x-slot:description>{{ $description }}</x-slot:description>
-        </x-hero-header>
-    </x-wrapper>
+        <x-hero-header :src="asset('assets/images/collaboration_type/header-' . Str::slug($title, '-') . '.jpeg')" :title="$title" :description="$description" />
+    </x-wrapper.inverse-primary>
 
     {{-- Benefits --}}
-    <x-wrapper class="text-center">
-        <x-heading-one>Benefit</x-heading-one>
-        <x-paragraph>Manfaat yang Anda Dapatkan</x-paragraph>
+    <x-wrapper.transparent class="text-center">
+        <x-fonts.heading-one text="Benefit" />
+        <x-fonts.paragraph text="Manfaat yang Anda Dapatkan" />
         {{ $benefits }}
-    </x-wrapper>
+    </x-wrapper.transparent>
 
     {{-- FAQ --}}
-    <x-wrapper bg="bg-secondary" :isFaq="true">
+    <x-wrapper.inverse-primary>
         <div class="lg:space-y-4 xl:space-y-6">
-            <x-heading-four class="text-accent">Frequently Asked Question</x-heading-four>
-            <x-heading-two>Pelajari Lebih Lanjut</x-heading-two>
+            <x-fonts.heading-four class="text-accent" text="Frequently Asked Question" />
+            <x-fonts.heading-two text="Pelajari Lebih Lanjut" />
         </div>
         <div class="flex flex-col lg:gap-4 xl:gap-6">
             {{ $faqs }}
         </div>
-    </x-wrapper>
+    </x-wrapper.inverse-primary>
 
     {{-- Bottom Navigation --}}
-    <x-wrapper>
+    <x-wrapper.transparent>
         <x-bottom-navigation :prev="$prev" :next="$next" />
-    </x-wrapper>
+    </x-wrapper.transparent>
 
     {{-- Contact Us --}}
-    <x-wrapper bg="bg-secondary">
+    <x-wrapper.inverse-primary>
         <x-hero-header-contact-us />
-    </x-wrapper>
+    </x-wrapper.inverse-primary>
 
     {{-- Bottom Breadcumb --}}
-    <x-wrapper :bottomBreadcumb="true">
+    <x-wrapper.bottom-breadcumb>
         <x-breadcumb>
-            <x-breadcumb-link href="#">{{ $title }}</x-breadcumb-link>
+            <x-breadcumb-link href="#" :link="$title" />
         </x-breadcumb>
-    </x-wrapper>
-
-    {{-- Footer --}}
-    <x-footer />
+    </x-wrapper.bottom-breadcumb>
 </x-app-layout>

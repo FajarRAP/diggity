@@ -1,97 +1,35 @@
-<x-collaboration-type-layout prev="Project Based" next="On Demand">
-    <x-slot:title>
-        Dedicated Team
-    </x-slot:title>
-
-    <x-slot:description>
-        Kami menawarkan akses mudah dan cepat ke talenta IT terbaik yang secara khusus didedikasikan untuk
-        proyek digital Anda. Kami fleksibel dalam memenuhi setiap kebutuhan digitalisasi bisnis perusahaan Anda.
-    </x-slot:description>
+<x-collaboration-type-layout prev="Project Based" next="On Demand" title="Dedicated Team"
+    description="Kami menawarkan akses mudah dan cepat ke talenta IT terbaik yang secara khusus didedikasikan untuk proyek digital Anda. Kami fleksibel dalam memenuhi setiap kebutuhan digitalisasi bisnis perusahaan Anda.">
 
     <x-slot:benefits>
         <div class="grid grid-cols-2 lg:gap-x-5 xl:gap-x-8 lg:gap-y-8 xl:gap-y-12">
-            <x-item-benefit num="1">
-                <x-slot:title>
-                    Kandidat Berkualitas Tinggi
-                </x-slot:title>
-                <x-slot:description>
-                    Kami melakukan seleksi ketat untuk memastikan setiap kandidat yang kami rekrut memiliki kualitas
-                    yang tinggi dalam menyelesaikan tantangan digital Anda.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="2">
-                <x-slot:title>
-                    Interview Langsung
-                </x-slot:title>
-                <x-slot:description>
-                    Anda memiliki kesempatan untuk melakukan wawancara langsung dengan calon karyawan kami, sehingga
-                    Anda dapat memastikan bahwa mereka sesuai dengan kebutuhan digital bisnis Anda.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="3">
-                <x-slot:title>
-                    Didedikasikan untuk Proyek Anda
-                </x-slot:title>
-                <x-slot:description>
-                    Setiap sumber daya yang kami sediakan sepenuhnya didedikasikan untuk proyek Anda, memberi Anda
-                    fleksibilitas dalam mengatur prioritas digital bisnis Anda.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="4">
-                <x-slot:title>
-                    Profesionalisme yang Terbukti
-                </x-slot:title>
-                <x-slot:description>
-                    Dengan pengalaman sejak tahun 2019, kami telah dipercaya oleh berbagai perusahaan di seluruh dunia,
-                    menunjukkan dedikasi kami dalam memenuhi kebutuhan digital dengan profesionalisme yang tinggi.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="5">
-                <x-slot:title>
-                    Transparansi dalam Pembayaran
-                </x-slot:title>
-                <x-slot:description>
-                    Biaya yang Anda bayarkan sesuai dengan penggunaan sumber daya, dihitung berdasarkan jumlah hari
-                    kerja dan diberikan tagihan secara bulanan, sehingga Anda dapat melihat jelas apa yang Anda bayar.
-                </x-slot:description>
-            </x-item-benefit>
-            <x-item-benefit num="6">
-                <x-slot:title>
-                    Fleksibilitas Layanan
-                </x-slot:title>
-                <x-slot:description>
-                    Layanan tim yang didedikasikan memberikan Anda kebebasan untuk memilih, menyesuaikan jumlah, dan
-                    mengelola sumber daya sesuai kebutuhan bisnis perusahaan Anda.
-                </x-slot:description>
-            </x-item-benefit>
+            <x-item-benefit title="Kandidat Berkualitas Tinggi"
+                description="Kami melakukan seleksi ketat untuk memastikan setiap kandidat yang kami rekrut memiliki kualitas yang tinggi dalam menyelesaikan tantangan digital Anda."
+                num="1" />
+            <x-item-benefit title="Interview Langsung"
+                description="Anda memiliki kesempatan untuk melakukan wawancara langsung dengan calon karyawan kami, sehingga Anda dapat memastikan bahwa mereka sesuai dengan kebutuhan digital bisnis Anda."
+                num="2" />
+            <x-item-benefit title="Didedikasikan untuk Proyek Anda"
+                description="Setiap sumber daya yang kami sediakan sepenuhnya didedikasikan untuk proyek Anda, memberi Anda fleksibilitas dalam mengatur prioritas digital bisnis Anda."
+                num="3" />
+            <x-item-benefit title="Profesionalisme yang Terbukti"
+                description="Dengan pengalaman sejak tahun 2019, kami telah dipercaya oleh berbagai perusahaan di seluruh dunia, menunjukkan dedikasi kami dalam memenuhi kebutuhan digital dengan profesionalisme yang tinggi."
+                num="4" />
+            <x-item-benefit title="Transparansi dalam Pembayaran"
+                description="Biaya yang Anda bayarkan sesuai dengan penggunaan sumber daya, dihitung berdasarkan jumlah hari kerja dan diberikan tagihan secara bulanan, sehingga Anda dapat melihat jelas apa yang Anda bayar."
+                num="5" />
+            <x-item-benefit title="Fleksibilitas Layanan"
+                description="Layanan tim yang didedikasikan memberikan Anda kebebasan untuk memilih, menyesuaikan jumlah, dan mengelola sumber daya sesuai kebutuhan bisnis perusahaan Anda."
+                num="6" />
         </div>
     </x-slot:benefits>
 
     <x-slot:faqs>
-        <x-item-faq>
-            <x-slot:question>
-                Apa yang dimaksud dengan model kerjasama dedicated team?
-            </x-slot:question>
-            <x-slot:answer>
-                Model kerjasama dedicated team adalah ketika tim pengembangan, yang terdiri dari satu atau beberapa
-                developer, ditugaskan secara eksklusif untuk bekerja pada satu proyek tertentu dalam periode waktu
-                yang telah ditentukan. Tim ini biasanya terdiri dari developer, tester, dan proyek manager yang
-                bekerja sama untuk menyelesaikan proyek tersebut.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Apakah Diggity menyediakan layanan outsourcing?
-            </x-slot:question>
-            <x-slot:answer>
-                Ya, Diggity menyediakan layanan outsourcing TI dengan model kerjasama tim khusus. Untuk detail lebih
-                lanjut, hubungi tim penjualan & pemasaran Diggity melalui tombol WhatsApp di situs web kami.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Bagaimana mekanisme model kerjasama dedicated team di Diggity?
-            </x-slot:question>
+        <x-item-faq question="Apa yang dimaksud dengan model kerjasama dedicated team?"
+            answer="Model kerjasama dedicated team adalah ketika tim pengembangan, yang terdiri dari satu atau beberapa developer, ditugaskan secara eksklusif untuk bekerja pada satu proyek tertentu dalam periode waktu yang telah ditentukan. Tim ini biasanya terdiri dari developer, tester, dan proyek manager yang bekerja sama untuk menyelesaikan proyek tersebut." />
+        <x-item-faq question="Apakah Diggity menyediakan layanan outsourcing?"
+            answer="Ya, Diggity menyediakan layanan outsourcing TI dengan model kerjasama tim khusus. Untuk detail lebih lanjut, hubungi tim penjualan & pemasaran Diggity melalui tombol WhatsApp di situs web kami." />
+        <x-item-faq question="Bagaimana mekanisme model kerjasama dedicated team di Diggity?">
             <x-slot:answer>
                 Mekanisme model kerjasama dedicated team di Diggity meliputi:
                 <ol class="list-disc ps-5">
@@ -104,46 +42,18 @@
                 </ol>
             </x-slot:answer>
         </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Berapa lama durasi kontrak untuk model kerjasama dedicated team?
-            </x-slot:question>
-            <x-slot:answer>
-                Durasi kontrak minimum untuk model kerjasama dedicated team di Diggity adalah 3 bulan, namun dapat
-                diperpanjang sesuai kebutuhan klien.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Bagaimana metode pembayaran untuk model kerjasama dedicated team?
-            </x-slot:question>
-            <x-slot:answer>
-                Pembayaran untuk model kerjasama dedicated team dilakukan setiap bulan atau sesuai dengan termin
-                yang telah disepakati sebelumnya, sesuai dengan nilai kontrak.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Apakah klien bisa memilih kandidat sendiri?
-            </x-slot:question>
-            <x-slot:answer>
-                Diggity menyediakan beberapa CV kandidat untuk seleksi klien. Klien dapat melakukan tes teknis,
-                wawancara, dan menolak kandidat yang tidak sesuai.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Bagaimana jika resource yang diinginkan klien tidak tersedia?
-            </x-slot:question>
-            <x-slot:answer>
-                Diggity akan membantu klien dengan proses perekrutan yang memakan waktu sekitar 2-4 minggu untuk
-                mencari kandidat yang sesuai.
-            </x-slot:answer>
-        </x-item-faq>
-        <x-item-faq>
-            <x-slot:question>
-                Apa keuntungan memilih model kerjasama dedicated team di Diggity?
-            </x-slot:question>
+        <x-item-faq question="Berapa lama durasi kontrak untuk model kerjasama dedicated team?"
+            answer="Durasi kontrak minimum untuk model kerjasama dedicated team di Diggity adalah 3 bulan, namun dapat diperpanjang sesuai kebutuhan klien." />
+        <x-item-faq question="Bagaimana metode pembayaran untuk model kerjasama dedicated team?"
+            answer="Pembayaran untuk model kerjasama dedicated team dilakukan setiap bulan atau sesuai dengan termin
+                yang telah disepakati sebelumnya, sesuai dengan nilai kontrak." />
+        <x-item-faq question="Apakah klien bisa memilih kandidat sendiri?"
+            answer="Diggity menyediakan beberapa CV kandidat untuk seleksi klien. Klien dapat melakukan tes teknis,
+                wawancara, dan menolak kandidat yang tidak sesuai." />
+        <x-item-faq question="Bagaimana jika resource yang diinginkan klien tidak tersedia?"
+            answer="Diggity akan membantu klien dengan proses perekrutan yang memakan waktu sekitar 2-4 minggu untuk
+                mencari kandidat yang sesuai." />
+        <x-item-faq question="Apa keuntungan memilih model kerjasama dedicated team di Diggity?">
             <x-slot:answer>
                 Beberapa keuntungan memilih model kerjasama dedicated team di Diggity termasuk:
                 <ol class="list-disc ps-5">
