@@ -16,7 +16,7 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 Volt::route('/', 'pages.home.home')->name('home');
-Volt::route('/contactus', 'pages.contactus.contact-us')->name('contact-us');
+Volt::route('/contactus', 'pages.contactus.service')->name('contact-us');
 Volt::route('/portfolio', 'pages.portfolio.portfolio')->name('portfolio');
 Volt::route('/portfolio/{id}', 'pages.portfolio.detail-portfolio')->name('detail-portfolio');
 
