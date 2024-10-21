@@ -46,26 +46,22 @@ new class extends Component {
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link x-on:click="courses=!courses" x-bind:class="isActive(courses)"
-                        x-on:click.outside="courses=false">
-                        <x-fonts.paragraph text="Kelas" />
+                    <x-nav-link x-on:click="courses=!courses" x-bind:class="isActive(courses)">
+                        <x-fonts.paragraph text="Akademi" />
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link x-on:click="guides=!guides" x-bind:class="isActive(guides)"
-                        x-on:click.outside="guides=false">
+                    <x-nav-link x-on:click="guides=!guides" x-bind:class="isActive(guides)">
                         <x-fonts.paragraph text="Panduan" />
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link x-on:click="about=!about" x-bind:class="isActive(about)"
-                        x-on:click.outside="about=false">
+                    <x-nav-link x-on:click="about=!about" x-bind:class="isActive(about)">
                         <x-fonts.paragraph text="Tentang" />
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link x-on:click="langs=!langs" x-bind:class="isActive(langs)"
-                        x-on:click.outside="langs=false">
+                    <x-nav-link x-on:click="langs=!langs" x-bind:class="isActive(langs)">
                         <div class="flex items-center">
                             <x-svgs.globe class="me-2 xl:size-6 lg:size-4" />
                             <x-fonts.paragraph text="ID" />
@@ -179,11 +175,149 @@ new class extends Component {
 
                 <x-mega-menu-content-more contentType="Produk" :href="route('product')" />
             </x-mega-menu-content>
-            <x-mega-menu-content x-show="active === 1" title="Model Kerja Sama">
+            <x-mega-menu-content x-show="active === 1" title="Harga">
                 <x-slot:items>
                     <x-mega-menu-content-item title="Harga"
                         description="Anda dapat memilih antara paket bulanan atau tahunan, sesuai dengan kebutuhan bisnis Anda."
                         :href="route('price')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+        </x-slot:content>
+    </x-mega-menu>
+
+    {{-- Mega Menu Academy --}}
+    <x-mega-menu x-show="courses" x-on:click.outside="courses=false" x-data="{ active: 0 }">
+        <x-slot:link>
+            <li>
+                <x-mega-menu-link x-on:click="active = 0" num="0" title="Kelas Utama"
+                    description="Explore kelas gratis dan berbayar bersama mentor expert" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 1" num="1" title="Alur Belajar"
+                    description="Panduan mentor expert untuk belajar jadi lebih terarah" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 2" num="2" title="Bootcamp"
+                    description="Belajar intensif bersertifikat dengan ahli selama 2-6 bulan" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 3" num="3" title="Webinar"
+                    description="Pelajari topik digital terbaru melalui webinar online" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 4" num="4" title="Pelatihan"
+                    description="Pelatihan digital dengan metode pembelajaran intensif" />
+            </li>
+        </x-slot:link>
+        <x-slot:content>
+            <x-mega-menu-content x-show="active === 0" title="Kelas Utama">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Web Development" description="Web Development"
+                        :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Mobile Development" description="Mobile Development"
+                        :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="UI/UX Design" description="UI/UX Design" :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Digital Marketing" description="Digital Marketing"
+                        :href="route('product-tax')" />
+                    <x-mega-menu-content-item title="Data Analysis" description="Data Analysis" :href="route('product-benefit-management')" />
+                    <x-mega-menu-content-item title="Cyber Security" description="Cyber Security"
+                        :href="route('product-sign')" />
+                </x-slot:items>
+
+                <x-mega-menu-content-more contentType="Kelas" :href="route('academy-class')" />
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 1" title="Alur Belajar">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Web Development" description="Web Development"
+                        :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Mobile Development" description="Mobile Development"
+                        :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="UI/UX Design" description="UI/UX Design" :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Digital Marketing" description="Digital Marketing"
+                        :href="route('product-tax')" />
+                    <x-mega-menu-content-item title="Data Analysis" description="Data Analysis" :href="route('product-benefit-management')" />
+                    <x-mega-menu-content-item title="Cyber Security" description="Cyber Security"
+                        :href="route('product-sign')" />
+                </x-slot:items>
+
+                <x-mega-menu-content-more contentType="Alur Belajar" :href="route('product')" />
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 2" title="Bootcamp">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Web Development" description="Web Development"
+                        :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Mobile Development" description="Mobile Development"
+                        :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="UI/UX Design" description="UI/UX Design" :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Digital Marketing" description="Digital Marketing"
+                        :href="route('product-tax')" />
+                    <x-mega-menu-content-item title="Data Analysis" description="Data Analysis" :href="route('product-benefit-management')" />
+                    <x-mega-menu-content-item title="Cyber Security" description="Cyber Security"
+                        :href="route('product-sign')" />
+                </x-slot:items>
+                <x-mega-menu-content-more contentType="Bootcamp" :href="route('product')" />
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 3" title="Webinar">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Webinar"
+                        description="Jalan pintas belajar digital skill bersama pembicara berpengalaman melalui 2 jam webinar"
+                        :href="route('product-hr')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 4" title="Pelatihan">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Pelatihan Institusi"
+                        description="Maksimalkan produktivitas tim  dengan pelatihan khusus yang dirancang untuk perusahaan Anda."
+                        :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Program Sertifikasi"
+                        description="Yakinkan perekrut dengan keterampilan terverifikasi melalui Program Sertifikasi Global."
+                        :href="route('product-hr')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+        </x-slot:content>
+    </x-mega-menu>
+
+    {{-- Mega Menu Guides --}}
+    <x-mega-menu x-show="guides" x-on:click.outside="guides=false" x-data="{ active: 0 }">
+        <x-slot:link>
+            <li>
+                <x-mega-menu-link x-on:click="active = 0" num="0" title="Panduan"
+                    description="Berbagai wawasan untuk segala kebutuhan Anda" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 1" num="1" title="Kolaborasi"
+                    description="Buka peluang untuk tumbuh dengan berbagai program kreatif kami" />
+            </li>
+            <li>
+                <x-mega-menu-link x-on:click="active = 2" num="2" title="Partner Komersial"
+                    description="Sinergikan bisnis Anda dengan solusi dan layanan kami" />
+            </li>
+        </x-slot:link>
+        <x-slot:content>
+            <x-mega-menu-content x-show="active === 0" title="Panduan">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Artikel" description="Artikel" :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Pusat Bantuan" description="Pusat Bantuan" :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="FAQ" description="FAQ" :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Studi Kasus" description="Studi Kasus" :href="route('product-tax')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 1" title="Kolaborasi">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Diggity News" description="Diggity News" :href="route('product-hr')" />
+                    <x-mega-menu-content-item title="Diggity Event" description="Diggity Event" :href="route('product-crm')" />
+                    <x-mega-menu-content-item title="Diggity Community" description="Diggity Community"
+                        :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Diggity Podcast" description="Diggity Podcast"
+                        :href="route('product-tax')" />
+                </x-slot:items>
+            </x-mega-menu-content>
+            <x-mega-menu-content x-show="active === 2" title="Partner Komersial">
+                <x-slot:items>
+                    <x-mega-menu-content-item title="Program Referral" description="Program Referral"
+                        :href="route('product-accountant')" />
+                    <x-mega-menu-content-item title="Program Reseller" description="Program Reseller"
+                        :href="route('product-tax')" />
                 </x-slot:items>
             </x-mega-menu-content>
         </x-slot:content>

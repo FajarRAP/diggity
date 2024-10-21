@@ -8,5 +8,7 @@
             <x-fonts.paragraph-small class="text-gray-500" text="Tersedia {{ $classes }} Kelas" />
         </div>
     </div>
-    <x-button class="mx-auto" text="Lihat Alur Belajar" />
+    <a href="{{ route('academy-class-category', ['category' => 'web-dev']) }}" class="block mx-auto w-fit" wire:navigate>
+        <x-button text="Lihat Alur Belajar" />
+    </a>
 </x-card>

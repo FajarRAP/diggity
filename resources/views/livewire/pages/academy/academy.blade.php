@@ -73,14 +73,13 @@ new #[Layout('layouts.app')] class extends Component {
 <div>
     <x-wrapper.inverse-primary>
         <x-breadcumb>
-            <x-breadcumb-link>Akademi</x-breadcumb-link>
+            <x-breadcumb-link link="Akademi" />
         </x-breadcumb>
         <div class="grid grid-cols-2 gap-24 mx-auto">
             <div class="flex flex-col justify-center lg:gap-8 xl:gap-12">
-                <x-heading-one>Akademi</x-heading-one>
-                <x-paragraph>Diggity menyediakan kelas online, bootcamp, webinar dan pelatihan terbaik dalam berbagai
-                    bidang IT seperti Desain, Pengembangan Perangkat Lunak, Keamanan Siber, Analisis Data, dan Pemasaran
-                    Digital yang cocok untuk pemula.</x-paragraph>
+                <x-fonts.heading-one text="Akademi" />
+                <x-fonts.paragraph
+                    text="Diggity menyediakan kelas online, bootcamp, webinar dan pelatihan terbaik dalam berbagai bidang IT seperti Desain, Pengembangan Perangkat Lunak, Keamanan Siber, Analisis Data, dan Pemasaran Digital yang cocok untuk pemula." />
             </div>
             <img src={{ asset('assets/images/carousels/carousel1.jpeg') }}
                 class="object-cover w-full lg:h-80 xl:h-96 rounded-3xl">
@@ -88,10 +87,9 @@ new #[Layout('layouts.app')] class extends Component {
     </x-wrapper.inverse-primary>
 
     <x-wrapper.transparent>
-        <x-heading-two class="text-center">Kelas Kami</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">Kelas online terbaik dalam berbagai bidang IT seperti Desain,
-            Pengembangan Perangkat Lunak,
-            Keamanan Siber, Analisis Data, dan Pemasaran Digital.</x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Kelas Kami" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Kelas online terbaik dalam berbagai bidang IT seperti Desain, Pengembangan Perangkat Lunak, Keamanan Siber, Analisis Data, dan Pemasaran Digital." />
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
             <x-card.item-class />
             <x-card.item-class />
@@ -99,60 +97,52 @@ new #[Layout('layouts.app')] class extends Component {
         </div>
         <a href="{{ route('academy-class') }}" class="block font-medium text-end text-primary hover:underline"
             wire:navigate>
-            <x-paragraph>Lihat Semua Kelas</x-paragraph>
+            <x-fonts.paragraph text="Lihat Semua Kelas" />
         </a>
     </x-wrapper.transparent>
 
     <x-wrapper.inverse-primary>
-        <x-heading-two class="text-center">Alur Belajar</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Meningkatkan fokus dalam mempelajari Desain, Pengembangan
-            Perangkat Lunak, Keamanan Siber, Analisis
-            Data, dan Pemasaran Digital dengan alur yang telah kami susun.
-        </x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Alur Belajar" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Meningkatkan fokus dalam mempelajari Desain, Pengembangan Perangkat Lunak, Keamanan Siber, Analisis Data, dan Pemasaran Digital dengan alur yang telah kami susun." />
         <div class="grid grid-cols-4 xl:gap-7 lg:gap-5">
             <x-card.item-learning-path title="UI/UX Design" classes="20" :src="asset('assets/images/academy/uiux.png')" />
             <x-card.item-learning-path title="Website Development" classes="20" :src="asset('assets/images/academy/web-dev.png')" />
             <x-card.item-learning-path title="Mobile Development" classes="20" :src="asset('assets/images/academy/mobile-dev.png')" />
             <x-card.item-learning-path title="Digital Marketing" classes="20" :src="asset('assets/images/academy/digital-marketing.png')" />
         </div>
-        <a href="" class="block font-medium text-end text-primary hover:underline">
-            <x-paragraph>Lihat Semua Alur Belajar</x-paragraph>
+        <a href="{{ route('academy-learning-path') }}" class="block font-medium text-end text-primary hover:underline"
+            wire:navigate>
+            <x-fonts.paragraph text="Lihat Semua Alur Belajar" />
         </a>
     </x-wrapper.inverse-primary>
 
     <x-wrapper.transparent>
-        <x-heading-two class="text-center">Bootcamp</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Telusuri Bootcamp yang Sesuai dengan Jalur Karier Anda dan Mulailah Meningkatkan Diri Anda Sekarang
-        </x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Bootcamp" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text=
+            "Telusuri Bootcamp yang Sesuai dengan Jalur Karier Anda dan Mulailah Meningkatkan Diri Anda Sekarang" />
         <ul class="flex p-3 overflow-x-auto lg:gap-8 xl:gap-12 container-snap">
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 0" wire:click="filterBootcamp(0)">Semua</x-button>
+                <x-button :isActive="$bootcampIndex == 0" wire:click="filterBootcamp(0)" text="Semua" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 1" wire:click="filterBootcamp(1)">UI/UX
-                    Design</x-button>
+                <x-button :isActive="$bootcampIndex == 1" wire:click="filterBootcamp(1)" text="UI/UX Design" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 2" wire:click="filterBootcamp(2)">Website
-                    Development</x-button>
+                <x-button :isActive="$bootcampIndex == 2" wire:click="filterBootcamp(2)" text="Website Development" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 3" wire:click="filterBootcamp(3)">Mobile
-                    App Development</x-button>
+                <x-button :isActive="$bootcampIndex == 3" wire:click="filterBootcamp(3)" text="Mobile App Development" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 4" wire:click="filterBootcamp(4)">Cyber
-                    Security</x-button>
+                <x-button :isActive="$bootcampIndex == 4" wire:click="filterBootcamp(4)" text="Cyber Security" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 5" wire:click="filterBootcamp(5)">Data
-                    Analysis</x-button>
+                <x-button :isActive="$bootcampIndex == 5" wire:click="filterBootcamp(5)" text="Data Analysis" />
             </li>
             <li class="shrink-0">
-                <x-button :isActive="$bootcampIndex == 6" wire:click="filterBootcamp(6)">Digital
-                    Marketing</x-button>
+                <x-button :isActive="$bootcampIndex == 6" wire:click="filterBootcamp(6)" text="Digital Marketing" />
             </li>
         </ul>
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
@@ -167,54 +157,51 @@ new #[Layout('layouts.app')] class extends Component {
             @endforeach
         </div>
         <a href="" class="block font-medium text-end text-primary hover:underline">
-            <x-paragraph>Lihat Semua Bootcamp</x-paragraph>
+            <x-fonts.paragraph text="Lihat Semua Bootcamp" />
         </a>
     </x-wrapper.transparent>
 
     <x-wrapper.inverse-primary>
-        <x-heading-two class="text-center">Webinar</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Tingkatkan Keterampilan Digital Anda dengan Webinar 2 Jam Bersama Pembicara Terkemuka dan Jadi Lebih Unggul
-            dalam Dunia Digital
-        </x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Webinar" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Tingkatkan Keterampilan Digital Anda dengan Webinar 2 Jam Bersama Pembicara Terkemuka dan Jadi Lebih Unggul dalam Dunia Digital" />
         <ul class="flex p-3 overflow-x-auto lg:gap-8 xl:gap-12 container-snap">
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 0" wire:click="filterWebinar(0)">Semua</x-button></li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 1" wire:click="filterWebinar(1)">UI/UX Design</x-button></li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 2" wire:click="filterWebinar(2)">Website
-                    Development</x-button></li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 3" wire:click="filterWebinar(3)">Mobile App
-                    Development</x-button></li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 4" wire:click="filterWebinar(4)">Cyber Security</x-button>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 0" wire:click="filterWebinar(0)" text="Semua" /></li>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 1" wire:click="filterWebinar(1)" text="UI/UX Design" /></li>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 2" wire:click="filterWebinar(2)"
+                    text="Website Development" /></li>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 3" wire:click="filterWebinar(3)"
+                    text="Mobile App Development" /></li>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 4" wire:click="filterWebinar(4)" text="Cyber Security" />
             </li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 5" wire:click="filterWebinar(5)">Data Analysis</x-button>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 5" wire:click="filterWebinar(5)" text="Data Analysis" />
             </li>
-            <li class="shrink-0"><x-button :isActive="$webinarIndex == 6" wire:click="filterWebinar(6)">Digital Marketing</x-button>
+            <li class="shrink-0"><x-button :isActive="$webinarIndex == 6" wire:click="filterWebinar(6)" text="Digital Marketing" />
             </li>
         </ul>
         <div class="grid grid-cols-3">
             <x-card class="xl:space-y-6 lg:space-y-4">
                 <img src="{{ asset('assets/images/carousels/carousel1.jpeg') }}" alt="webinar image" class="rounded-lg">
-                <x-paragraph-small class="font-semibold">Date of Webinar Held</x-paragraph-small>
-                <x-paragraph class="font-semibold">Webinar Title</x-paragraph>
-                <x-paragraph-small>Webinar Description</x-paragraph-small>
+                <x-fonts.paragraph-small class="font-semibold" text="Date of Webinar Held" />
+                <x-fonts.paragraph class="font-semibold" text="Webinar Title" />
+                <x-fonts.paragraph-small text="Webinar Description" />
                 <div class="flex items-center justify-between">
-                    <x-heading-three class="text-accent">Rp. 199.000</x-heading-three>
-                    <x-button>Daftar Webinar</x-button>
+                    <x-fonts.heading-three class="text-accent" text="Rp. 199.000" />
+                    <x-button text="Daftar Webinar" />
                 </div>
             </x-card>
         </div>
         <a href="" class="block font-medium text-end text-primary hover:underline">
-            <x-paragraph>Lihat Semua Webinar</x-paragraph>
+            <x-fonts.paragraph text="Lihat Semua Webinar" />
         </a>
     </x-wrapper.inverse-primary>
 
     <x-wrapper.transparent>
-        <x-heading-two class="w-1/2 mx-auto text-center">
-            Program Pelatihan Keterampilan Digital untuk Universitas,
-            Perusahaan dan Pemerintahan</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Temukan Program Pelatihan yang Tepat untuk Kebutuhan Anda dengan Tim yang Ahli dalam Merancang dan
-            Mengadakan Program yang Didedikasikan kepada Perusahaan, Pemerintah, dan Universitas.</x-paragraph>
+        <x-fonts.heading-two class="w-1/2 mx-auto text-center"
+            text="Program Pelatihan Keterampilan Digital untuk Universitas,
+            Perusahaan dan Pemerintahan" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Temukan Program Pelatihan yang Tepat untuk Kebutuhan Anda dengan Tim yang Ahli dalam Merancang dan Mengadakan Program yang Didedikasikan kepada Perusahaan, Pemerintah, dan Universitas." />
         <div class="grid grid-cols-4 xl:gap-7 lg:gap-5">
             <x-card.item-workshop title="Program Peningkatan Keterampilan Internal"
                 description="Solusi yang tepat bagi perusahaan dan lembaga pemerintahan yang menginginkan transformasi digital."
@@ -238,9 +225,9 @@ new #[Layout('layouts.app')] class extends Component {
     </x-wrapper.transparent>
 
     <x-wrapper.inverse-primary>
-        <x-heading-two class="w-2/3 mx-auto text-center">
-            Kustomisasi Pelatihan Kemampuan Digital Institusi Anda dengan
-            Beragam Metode Pembelajaran dari Diggity</x-heading-two>
+        <x-fonts.heading-two class="w-2/3 mx-auto text-center"
+            text="Kustomisasi Pelatihan Kemampuan Digital Institusi Anda dengan
+            Beragam Metode Pembelajaran dari Diggity" />
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
             <x-card.item-training title="Bootcamp"
                 description="Kelas Intensif untuk Memperluas Pengetahuan dan Keterampilan Peserta dalam Mengembangkan Prototipe Produk Digital."
@@ -255,10 +242,10 @@ new #[Layout('layouts.app')] class extends Component {
     </x-wrapper.inverse-primary>
 
     <x-wrapper.transparent>
-        <x-heading-two class="text-center">Ragam Program Pembelajaran yang Tersedia</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Temukan kurikulum terbaik yang sesuai dengan kebutuhan pembelajaran karyawan Anda melalui beragam pilihan
-            program yang kami tawarkan.</x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Ragam Program Pembelajaran yang Tersedia" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Temukan kurikulum terbaik yang sesuai dengan kebutuhan pembelajaran karyawan Anda melalui beragam pilihan
+            program yang kami tawarkan." />
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
             <x-card.item-learning-program title="Transformasi & Kepemimpinan Digital"
                 description="Topik ini akan membantu Anda memahami strategi dan pola pikir saat melakukan transformasi digital di perusahaan."
@@ -320,45 +307,41 @@ new #[Layout('layouts.app')] class extends Component {
     </x-wrapper.transparent>
 
     <x-wrapper.inverse-primary>
-        <x-heading-two class="text-center">Program Sertifikasi yang Tersedia</x-heading-two>
+        <x-fonts.heading-two class="text-center" text="Program Sertifikasi yang Tersedia" />
         <div class="flex p-3 overflow-x-auto container-snap xl:gap-12 lg:gap-8">
-            <x-button class="shrink-0">Semua</x-button>
-            <x-button class="shrink-0">Meta Digital Marketing Associate</x-button>
-            <x-button class="shrink-0">Adobe Certified Professional</x-button>
-            <x-button class="shrink-0">App Development with Swift</x-button>
-            <x-button class="shrink-0">Cisco Certified Support Technician</x-button>
+            <x-button class="shrink-0" text="Semua" />
+            <x-button class="shrink-0" text="Meta Digital Marketing Associate" />
+            <x-button class="shrink-0" text="Adobe Certified Professional" />
+            <x-button class="shrink-0" text="App Development with Swift" />
+            <x-button class="shrink-0" text="Cisco Certified Support Technician" />
         </div>
         <div class="grid grid-cols-3 xl:gap-7 lg:gap-5">
             <x-card.item-certification-program title="Certification Title" price="Certification Price" />
 
         </div>
         <a href="" class="block font-medium text-end text-primary hover:underline">
-            <x-paragraph>Lihat Semua Sertifikasi</x-paragraph>
+            <x-fonts.paragraph text="Lihat Semua Sertifikasi" />
         </a>
     </x-wrapper.inverse-primary>
 
     <x-wrapper.transparent>
-        <x-heading-two class="text-center">
-            Mulai Langkah Menjadi Spesialis dengan Paket Sertifikasi</x-heading-two>
-        <x-paragraph class="w-2/3 mx-auto text-center">
-            Tersedia berbagai pilihan paket sertifikasi untuk membantu Anda memulai perjalanan menjadi spesialis di
-            bidang pilihan Anda.</x-paragraph>
+        <x-fonts.heading-two class="text-center" text="Mulai Langkah Menjadi Spesialis dengan Paket Sertifikasi" />
+        <x-fonts.paragraph class="w-2/3 mx-auto text-center"
+            text="Tersedia berbagai pilihan paket sertifikasi untuk membantu Anda memulai perjalanan menjadi spesialis di bidang pilihan Anda." />
         <div class="grid grid-cols-2 xl:gap-7 lg:gap-5">
-            <x-card.item-certification-bundle />
-            <x-card.item-certification-bundle />
-            <x-card.item-certification-bundle />
-            <x-card.item-certification-bundle />
+            <x-card.item-certification-bundle title="Certification Bundle Title" totalProgram="10 Program" />
+            <x-card.item-certification-bundle title="Certification Bundle Title" totalProgram="10 Program" />
+            <x-card.item-certification-bundle title="Certification Bundle Title" totalProgram="10 Program" />
+            <x-card.item-certification-bundle title="Certification Bundle Title" totalProgram="10 Program" />
         </div>
         <a href="" class="block font-medium text-end text-primary hover:underline">
-            <x-paragraph>Lihat Semua Sertifikasi</x-paragraph>
+            <x-fonts.paragraph text="Lihat Semua Sertifikasi" />
         </a>
     </x-wrapper.transparent>
 
     <x-wrapper.bottom-breadcumb>
         <x-breadcumb>
-            <x-breadcumb-link>Akademi</x-breadcumb-link>
+            <x-breadcumb-link link="Akademi" />
         </x-breadcumb>
     </x-wrapper.bottom-breadcumb>
-
-    <x-footer />
 </div>

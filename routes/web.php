@@ -24,6 +24,8 @@ Volt::route('academy', 'pages.academy.academy')->name('academy');
 Volt::route('academy/class', 'pages.academy.class')->name('academy-class');
 Volt::route('academy/class/{category}', 'pages.academy.class-category')->name('academy-class-category');
 Volt::route('academy/class/{category}/{name}', 'pages.academy.class-item')->name('academy-class-item');
+Volt::route('academy/learning-path', 'pages.academy.learning-path')->name('academy-learning-path');
+Volt::route('academy/learning-path/{slug}', 'pages.academy.learning-path-item')->name('academy-learning-path-item');
 
 require __DIR__ . '/collaboration-type.php';
 require __DIR__ . '/service.php';
