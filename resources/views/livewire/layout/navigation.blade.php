@@ -240,7 +240,7 @@ new class extends Component {
                         :href="route('product-sign')" />
                 </x-slot:items>
 
-                <x-mega-menu-content-more contentType="Alur Belajar" :href="route('product')" />
+                <x-mega-menu-content-more contentType="Alur Belajar" :href="route('academy-learning-path')" />
             </x-mega-menu-content>
             <x-mega-menu-content x-show="active === 2" title="Bootcamp">
                 <x-slot:items>
@@ -255,7 +255,7 @@ new class extends Component {
                     <x-mega-menu-content-item title="Cyber Security" description="Cyber Security"
                         :href="route('product-sign')" />
                 </x-slot:items>
-                <x-mega-menu-content-more contentType="Bootcamp" :href="route('product')" />
+                <x-mega-menu-content-more contentType="Bootcamp" :href="route('academy-bootcamp')" />
             </x-mega-menu-content>
             <x-mega-menu-content x-show="active === 3" title="Webinar">
                 <x-slot:items>
