@@ -104,4 +104,10 @@ new #[Layout('layouts.app')] class extends Component {};
             </x-item-faq>
         </div>
     </x-wrapper.transparent>
+
+    <x-wrapper.bottom-breadcumb>
+        <x-breadcumb>
+            <x-breadcumb-link link="Bootcamp" />
+        </x-breadcumb>
+    </x-wrapper.bottom-breadcumb>
 </div>

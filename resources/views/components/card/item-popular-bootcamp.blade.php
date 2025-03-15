@@ -8,6 +8,8 @@
     <x-badges.primary class="w-fit" text="Level Pemula" />
     <div class="flex items-center justify-between">
         <x-fonts.paragraph text="<10 Kursi Tersisa" />
-        <x-button text="Segera Habis" />
+        <a href="{{ route('academy-bootcamp-item', ['slug' => 'flutter-pemula']) }}" wire:navigate>
+            <x-button text="Segera Habis" />
+        </a>
     </div>
 </x-card>
